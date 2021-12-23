@@ -9600,3 +9600,613 @@ org.bson.codecs.configuration.CodecConfigurationException: Can't find a codec fo
 4896 [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  - Routes shutdown summary (total:1 stopped:1)
 4897 [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  -     Stopped route1 (direct://restCall)
 4899 [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  - Apache Camel 3.12.0 (camel-1) shutdown in 7ms (uptime:4s479ms)
+0    [main] INFO  org.eclipse.jetty.util.log  - Logging initialized @632ms to org.eclipse.jetty.util.log.Slf4jLog
+39   [main] WARN  org.apache.camel.component.jetty.JettyHttpComponent  - You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8080/v1/test?httpMethodRestrict=GET%2COPTIONS&optionsEnabled=true
+72   [main] INFO  org.eclipse.jetty.server.Server  - jetty-9.4.43.v20210629; built: 2021-06-30T11:07:22.254Z; git: 526006ecfa3af7f1a27ef3a288e2bef7ea9dd7e8; jvm 11.0.13+8-Ubuntu-0ubuntu1.20.04
+103  [main] INFO  org.eclipse.jetty.server.handler.ContextHandler  - Started o.e.j.s.ServletContextHandler@7357a011{/,null,AVAILABLE}
+119  [main] INFO  org.eclipse.jetty.server.AbstractConnector  - Started ServerConnector@14dd7b39{HTTP/1.1, (http/1.1)}{localhost:8080}
+119  [main] INFO  org.eclipse.jetty.server.Server  - Started @753ms
+121  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  - Routes startup summary (total:2 started:2)
+121  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  -     Started route1 (direct://getCore)
+121  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  -     Started route2 (rest://get:/v1/test)
+121  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  - Apache Camel 3.12.0 (camel-1) started in 364ms (build:85ms init:130ms start:149ms)
+0    [main] INFO  org.eclipse.jetty.util.log  - Logging initialized @773ms to org.eclipse.jetty.util.log.Slf4jLog
+42   [main] WARN  org.apache.camel.component.jetty.JettyHttpComponent  - You use localhost interface! It means that no external connections will be available. Don't you want to use 0.0.0.0 instead (all network interfaces)? jetty:http://localhost:8080/v1/test?httpMethodRestrict=GET%2COPTIONS&optionsEnabled=true
+84   [main] INFO  org.eclipse.jetty.server.Server  - jetty-9.4.43.v20210629; built: 2021-06-30T11:07:22.254Z; git: 526006ecfa3af7f1a27ef3a288e2bef7ea9dd7e8; jvm 11.0.13+8-Ubuntu-0ubuntu1.20.04
+112  [main] INFO  org.eclipse.jetty.server.handler.ContextHandler  - Started o.e.j.s.ServletContextHandler@43b6123e{/,null,AVAILABLE}
+130  [main] INFO  org.eclipse.jetty.server.AbstractConnector  - Started ServerConnector@53941c2f{HTTP/1.1, (http/1.1)}{localhost:8080}
+130  [main] INFO  org.eclipse.jetty.server.Server  - Started @904ms
+131  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  - Routes startup summary (total:2 started:2)
+132  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  -     Started route1 (direct://getCore)
+132  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  -     Started route2 (rest://get:/v1/test)
+132  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  - Apache Camel 3.12.0 (camel-1) started in 513ms (build:86ms init:139ms start:288ms)
+0    [main] INFO  org.apache.camel.component.netty.http.HttpServerBootstrapFactory  - BootstrapFactory on port 8080 is using bootstrap configuration: [NettyServerBootstrapConfiguration{protocol='http', host='localhost', port=8080, broadcast=false, sendBufferSize=65536, receiveBufferSize=65536, receiveBufferSizePredictor=0, workerCount=0, bossCount=1, keepAlive=true, tcpNoDelay=true, reuseAddress=true, connectTimeout=10000, backlog=0, serverInitializerFactory=org.apache.camel.component.netty.http.HttpServerInitializerFactory@3e62d773, nettyServerBootstrapFactory=null, options=null, ssl=false, sslHandler=null, sslContextParameters='null', needClientAuth=false, enabledProtocols='TLSv1,TLSv1.1,TLSv1.2, keyStoreFile=null, trustStoreFile=null, keyStoreResource='null', trustStoreResource='null', keyStoreFormat='JKS', securityProvider='SunX509', passphrase='null', bossGroup=null, workerGroup=null, networkInterface='null', reconnect='true', reconnectInterval='10000'}]
+8    [main] INFO  org.apache.camel.component.netty.NettyComponent  - Creating shared NettyConsumerExecutorGroup with 17 threads
+168  [main] INFO  org.apache.camel.component.netty.SingleTCPNettyServerBootstrapFactory  - ServerBootstrap binding to localhost:8080
+250  [main] INFO  org.apache.camel.component.netty.NettyConsumer  - Netty consumer bound to: localhost:8080
+254  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  - Routes startup summary (total:2 started:2)
+255  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  -     Started route1 (direct://getCore)
+255  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  -     Started route2 (rest://get:/v1/test)
+255  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  - Apache Camel 3.12.0 (camel-1) started in 531ms (build:67ms init:211ms start:253ms)
+0    [main] INFO  org.apache.camel.component.netty.http.HttpServerBootstrapFactory  - BootstrapFactory on port 8080 is using bootstrap configuration: [NettyServerBootstrapConfiguration{protocol='http', host='localhost', port=8080, broadcast=false, sendBufferSize=65536, receiveBufferSize=65536, receiveBufferSizePredictor=0, workerCount=0, bossCount=1, keepAlive=true, tcpNoDelay=true, reuseAddress=true, connectTimeout=10000, backlog=0, serverInitializerFactory=org.apache.camel.component.netty.http.HttpServerInitializerFactory@3e62d773, nettyServerBootstrapFactory=null, options=null, ssl=false, sslHandler=null, sslContextParameters='null', needClientAuth=false, enabledProtocols='TLSv1,TLSv1.1,TLSv1.2, keyStoreFile=null, trustStoreFile=null, keyStoreResource='null', trustStoreResource='null', keyStoreFormat='JKS', securityProvider='SunX509', passphrase='null', bossGroup=null, workerGroup=null, networkInterface='null', reconnect='true', reconnectInterval='10000'}]
+12   [main] INFO  org.apache.camel.component.netty.NettyComponent  - Creating shared NettyConsumerExecutorGroup with 17 threads
+170  [main] INFO  org.apache.camel.component.netty.SingleTCPNettyServerBootstrapFactory  - ServerBootstrap binding to localhost:8080
+237  [main] INFO  org.apache.camel.component.netty.NettyConsumer  - Netty consumer bound to: localhost:8080
+241  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  - Routes startup summary (total:2 started:2)
+241  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  -     Started route1 (direct://getCore)
+241  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  -     Started route2 (rest://get:/v1/test)
+242  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  - Apache Camel 3.12.0 (camel-1) started in 545ms (build:81ms init:227ms start:237ms)
+0    [main] INFO  org.apache.camel.component.netty.http.HttpServerBootstrapFactory  - BootstrapFactory on port 8080 is using bootstrap configuration: [NettyServerBootstrapConfiguration{protocol='http', host='localhost', port=8080, broadcast=false, sendBufferSize=65536, receiveBufferSize=65536, receiveBufferSizePredictor=0, workerCount=0, bossCount=1, keepAlive=true, tcpNoDelay=true, reuseAddress=true, connectTimeout=10000, backlog=0, serverInitializerFactory=org.apache.camel.component.netty.http.HttpServerInitializerFactory@638ef7ed, nettyServerBootstrapFactory=null, options=null, ssl=false, sslHandler=null, sslContextParameters='null', needClientAuth=false, enabledProtocols='TLSv1,TLSv1.1,TLSv1.2, keyStoreFile=null, trustStoreFile=null, keyStoreResource='null', trustStoreResource='null', keyStoreFormat='JKS', securityProvider='SunX509', passphrase='null', bossGroup=null, workerGroup=null, networkInterface='null', reconnect='true', reconnectInterval='10000'}]
+8    [main] INFO  org.apache.camel.component.netty.NettyComponent  - Creating shared NettyConsumerExecutorGroup with 17 threads
+181  [main] INFO  org.apache.camel.component.netty.SingleTCPNettyServerBootstrapFactory  - ServerBootstrap binding to localhost:8080
+253  [main] INFO  org.apache.camel.component.netty.NettyConsumer  - Netty consumer bound to: localhost:8080
+258  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  - Routes startup summary (total:2 started:2)
+258  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  -     Started route1 (direct://getCore)
+258  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  -     Started route2 (rest://get:/v1/test)
+258  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  - Apache Camel 3.12.0 (camel-1) started in 544ms (build:84ms init:204ms start:256ms)
+5026 [Camel (camel-1) thread #2 - NettyConsumerExecutorGroup] INFO  route1  - log:?showBody=true&showHeader=true
+6073 [Camel (camel-1) thread #2 - NettyConsumerExecutorGroup] INFO  route1  - log:?showBody=true&showHeader=true
+0    [main] INFO  org.apache.camel.component.netty.http.HttpServerBootstrapFactory  - BootstrapFactory on port 8080 is using bootstrap configuration: [NettyServerBootstrapConfiguration{protocol='http', host='localhost', port=8080, broadcast=false, sendBufferSize=65536, receiveBufferSize=65536, receiveBufferSizePredictor=0, workerCount=0, bossCount=1, keepAlive=true, tcpNoDelay=true, reuseAddress=true, connectTimeout=10000, backlog=0, serverInitializerFactory=org.apache.camel.component.netty.http.HttpServerInitializerFactory@638ef7ed, nettyServerBootstrapFactory=null, options=null, ssl=false, sslHandler=null, sslContextParameters='null', needClientAuth=false, enabledProtocols='TLSv1,TLSv1.1,TLSv1.2, keyStoreFile=null, trustStoreFile=null, keyStoreResource='null', trustStoreResource='null', keyStoreFormat='JKS', securityProvider='SunX509', passphrase='null', bossGroup=null, workerGroup=null, networkInterface='null', reconnect='true', reconnectInterval='10000'}]
+9    [main] INFO  org.apache.camel.component.netty.NettyComponent  - Creating shared NettyConsumerExecutorGroup with 17 threads
+156  [main] INFO  org.apache.camel.component.netty.SingleTCPNettyServerBootstrapFactory  - ServerBootstrap binding to localhost:8080
+229  [main] INFO  org.apache.camel.component.netty.NettyConsumer  - Netty consumer bound to: localhost:8080
+232  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  - Routes startup summary (total:2 started:2)
+232  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  -     Started route1 (direct://getCore)
+232  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  -     Started route2 (rest://get:/v1/test)
+233  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  - Apache Camel 3.12.0 (camel-1) started in 547ms (build:79ms init:239ms start:229ms)
+5193 [Camel (camel-1) thread #2 - NettyConsumerExecutorGroup] INFO  route1  - log:?LEVEL=info&showBody=true&showHeader=true
+5775 [Camel (camel-1) thread #2 - NettyConsumerExecutorGroup] INFO  route1  - log:?LEVEL=info&showBody=true&showHeader=true
+0    [main] INFO  org.apache.camel.component.netty.http.HttpServerBootstrapFactory  - BootstrapFactory on port 8080 is using bootstrap configuration: [NettyServerBootstrapConfiguration{protocol='http', host='localhost', port=8080, broadcast=false, sendBufferSize=65536, receiveBufferSize=65536, receiveBufferSizePredictor=0, workerCount=0, bossCount=1, keepAlive=true, tcpNoDelay=true, reuseAddress=true, connectTimeout=10000, backlog=0, serverInitializerFactory=org.apache.camel.component.netty.http.HttpServerInitializerFactory@389b0789, nettyServerBootstrapFactory=null, options=null, ssl=false, sslHandler=null, sslContextParameters='null', needClientAuth=false, enabledProtocols='TLSv1,TLSv1.1,TLSv1.2, keyStoreFile=null, trustStoreFile=null, keyStoreResource='null', trustStoreResource='null', keyStoreFormat='JKS', securityProvider='SunX509', passphrase='null', bossGroup=null, workerGroup=null, networkInterface='null', reconnect='true', reconnectInterval='10000'}]
+9    [main] INFO  org.apache.camel.component.netty.NettyComponent  - Creating shared NettyConsumerExecutorGroup with 17 threads
+169  [main] INFO  org.apache.camel.component.netty.SingleTCPNettyServerBootstrapFactory  - ServerBootstrap binding to localhost:8080
+241  [main] INFO  org.apache.camel.component.netty.NettyConsumer  - Netty consumer bound to: localhost:8080
+244  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  - Routes startup summary (total:2 started:2)
+244  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  -     Started route1 (direct://getCore)
+244  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  -     Started route2 (rest://get:/v1/test)
+245  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  - Apache Camel 3.12.0 (camel-1) started in 530ms (build:83ms init:205ms start:242ms)
+6726 [Camel (camel-1) thread #2 - NettyConsumerExecutorGroup] INFO    - Exchange[ExchangePattern: InOut, BodyType: String, Body: Hello Rest Api]
+7354 [Camel (camel-1) thread #2 - NettyConsumerExecutorGroup] INFO    - Exchange[ExchangePattern: InOut, BodyType: String, Body: Hello Rest Api]
+0    [main] INFO  org.apache.camel.component.netty.http.HttpServerBootstrapFactory  - BootstrapFactory on port 8080 is using bootstrap configuration: [NettyServerBootstrapConfiguration{protocol='http', host='localhost', port=8080, broadcast=false, sendBufferSize=65536, receiveBufferSize=65536, receiveBufferSizePredictor=0, workerCount=0, bossCount=1, keepAlive=true, tcpNoDelay=true, reuseAddress=true, connectTimeout=10000, backlog=0, serverInitializerFactory=org.apache.camel.component.netty.http.HttpServerInitializerFactory@51bf5add, nettyServerBootstrapFactory=null, options=null, ssl=false, sslHandler=null, sslContextParameters='null', needClientAuth=false, enabledProtocols='TLSv1,TLSv1.1,TLSv1.2, keyStoreFile=null, trustStoreFile=null, keyStoreResource='null', trustStoreResource='null', keyStoreFormat='JKS', securityProvider='SunX509', passphrase='null', bossGroup=null, workerGroup=null, networkInterface='null', reconnect='true', reconnectInterval='10000'}]
+12   [main] INFO  org.apache.camel.component.netty.NettyComponent  - Creating shared NettyConsumerExecutorGroup with 17 threads
+177  [main] INFO  org.apache.camel.component.netty.SingleTCPNettyServerBootstrapFactory  - ServerBootstrap binding to localhost:8080
+247  [main] INFO  org.apache.camel.component.netty.NettyConsumer  - Netty consumer bound to: localhost:8080
+251  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  - Routes startup summary (total:2 started:2)
+251  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  -     Started route1 (direct://getCore)
+251  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  -     Started route2 (rest://get:/v1/test)
+251  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  - Apache Camel 3.12.0 (camel-1) started in 544ms (build:95ms init:202ms start:247ms)
+0    [main] INFO  org.apache.camel.component.netty.http.HttpServerBootstrapFactory  - BootstrapFactory on port 8080 is using bootstrap configuration: [NettyServerBootstrapConfiguration{protocol='http', host='localhost', port=8080, broadcast=false, sendBufferSize=65536, receiveBufferSize=65536, receiveBufferSizePredictor=0, workerCount=0, bossCount=1, keepAlive=true, tcpNoDelay=true, reuseAddress=true, connectTimeout=10000, backlog=0, serverInitializerFactory=org.apache.camel.component.netty.http.HttpServerInitializerFactory@264f218, nettyServerBootstrapFactory=null, options=null, ssl=false, sslHandler=null, sslContextParameters='null', needClientAuth=false, enabledProtocols='TLSv1,TLSv1.1,TLSv1.2, keyStoreFile=null, trustStoreFile=null, keyStoreResource='null', trustStoreResource='null', keyStoreFormat='JKS', securityProvider='SunX509', passphrase='null', bossGroup=null, workerGroup=null, networkInterface='null', reconnect='true', reconnectInterval='10000'}]
+10   [main] INFO  org.apache.camel.component.netty.NettyComponent  - Creating shared NettyConsumerExecutorGroup with 17 threads
+183  [main] INFO  org.apache.camel.component.netty.SingleTCPNettyServerBootstrapFactory  - ServerBootstrap binding to localhost:8080
+256  [main] INFO  org.apache.camel.component.netty.NettyConsumer  - Netty consumer bound to: localhost:8080
+260  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  - Routes startup summary (total:1 started:1)
+260  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  -     Started route1 (rest://get:/v1/test)
+260  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  - Apache Camel 3.12.0 (camel-1) started in 526ms (build:73ms init:198ms start:255ms)
+35013 [Camel (camel-1) thread #2 - NettyConsumerExecutorGroup] ERROR org.apache.camel.processor.errorhandler.DefaultErrorHandler  - Failed delivery for (MessageId: 970292DF7D1E3B5-0000000000000000 on ExchangeId: 970292DF7D1E3B5-0000000000000000). Exhausted after delivery attempt: 1 caught: org.apache.camel.component.direct.DirectConsumerNotAvailableException: No consumers available on endpoint: direct://dbInput. Exchange[]
+
+Message History (complete message history is disabled)
+---------------------------------------------------------------------------------------------------------------------------------------
+RouteId              ProcessorId          Processor                                                                        Elapsed (ms)
+[route1            ] [route1            ] [from[http://localhost:8080/v1/test?httpMethodRestrict=GET%2COPTIONS]          ] [     30015]
+	...
+[route1            ] [to1               ] [direct:dbInput                                                                ] [         0]
+
+Stacktrace
+---------------------------------------------------------------------------------------------------------------------------------------
+
+org.apache.camel.component.direct.DirectConsumerNotAvailableException: No consumers available on endpoint: direct://dbInput. Exchange[]
+	at org.apache.camel.component.direct.DirectProducer.process(DirectProducer.java:82)
+	at org.apache.camel.processor.SendProcessor.process(SendProcessor.java:172)
+	at org.apache.camel.processor.errorhandler.RedeliveryErrorHandler$SimpleTask.run(RedeliveryErrorHandler.java:469)
+	at org.apache.camel.impl.engine.DefaultReactiveExecutor$Worker.schedule(DefaultReactiveExecutor.java:179)
+	at org.apache.camel.impl.engine.DefaultReactiveExecutor.scheduleMain(DefaultReactiveExecutor.java:64)
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:184)
+	at org.apache.camel.impl.engine.CamelInternalProcessor.process(CamelInternalProcessor.java:399)
+	at org.apache.camel.component.netty.handlers.ServerChannelHandler.processAsynchronously(ServerChannelHandler.java:150)
+	at org.apache.camel.component.netty.handlers.ServerChannelHandler.channelRead0(ServerChannelHandler.java:112)
+	at org.apache.camel.component.netty.http.handlers.HttpServerChannelHandler.channelRead0(HttpServerChannelHandler.java:224)
+	at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:99)
+	at org.apache.camel.component.netty.http.handlers.HttpServerMultiplexChannelHandler.channelRead0(HttpServerMultiplexChannelHandler.java:162)
+	at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:99)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.access$600(AbstractChannelHandlerContext.java:61)
+	at io.netty.channel.AbstractChannelHandlerContext$7.run(AbstractChannelHandlerContext.java:370)
+	at io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:66)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+0    [main] INFO  org.apache.camel.component.netty.http.HttpServerBootstrapFactory  - BootstrapFactory on port 8080 is using bootstrap configuration: [NettyServerBootstrapConfiguration{protocol='http', host='localhost', port=8080, broadcast=false, sendBufferSize=65536, receiveBufferSize=65536, receiveBufferSizePredictor=0, workerCount=0, bossCount=1, keepAlive=true, tcpNoDelay=true, reuseAddress=true, connectTimeout=10000, backlog=0, serverInitializerFactory=org.apache.camel.component.netty.http.HttpServerInitializerFactory@503f91c3, nettyServerBootstrapFactory=null, options=null, ssl=false, sslHandler=null, sslContextParameters='null', needClientAuth=false, enabledProtocols='TLSv1,TLSv1.1,TLSv1.2, keyStoreFile=null, trustStoreFile=null, keyStoreResource='null', trustStoreResource='null', keyStoreFormat='JKS', securityProvider='SunX509', passphrase='null', bossGroup=null, workerGroup=null, networkInterface='null', reconnect='true', reconnectInterval='10000'}]
+10   [main] INFO  org.apache.camel.component.netty.NettyComponent  - Creating shared NettyConsumerExecutorGroup with 17 threads
+165  [main] INFO  org.apache.camel.component.netty.SingleTCPNettyServerBootstrapFactory  - ServerBootstrap binding to localhost:8080
+237  [main] INFO  org.apache.camel.component.netty.NettyConsumer  - Netty consumer bound to: localhost:8080
+241  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  - Routes startup summary (total:1 started:1)
+241  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  -     Started route1 (rest://get:/v1/test)
+242  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  - Apache Camel 3.12.0 (camel-1) started in 502ms (build:81ms init:183ms start:238ms)
+3919 [Camel (camel-1) thread #2 - NettyConsumerExecutorGroup] INFO    - Exchange[ExchangePattern: InOut, BodyType: String, Body: ]
+7892 [Camel (camel-1) thread #2 - NettyConsumerExecutorGroup] INFO    - Exchange[ExchangePattern: InOut, BodyType: String, Body: ]
+0    [main] INFO  org.apache.camel.component.netty.http.HttpServerBootstrapFactory  - BootstrapFactory on port 8080 is using bootstrap configuration: [NettyServerBootstrapConfiguration{protocol='http', host='localhost', port=8080, broadcast=false, sendBufferSize=65536, receiveBufferSize=65536, receiveBufferSizePredictor=0, workerCount=0, bossCount=1, keepAlive=true, tcpNoDelay=true, reuseAddress=true, connectTimeout=10000, backlog=0, serverInitializerFactory=org.apache.camel.component.netty.http.HttpServerInitializerFactory@7d9f158f, nettyServerBootstrapFactory=null, options=null, ssl=false, sslHandler=null, sslContextParameters='null', needClientAuth=false, enabledProtocols='TLSv1,TLSv1.1,TLSv1.2, keyStoreFile=null, trustStoreFile=null, keyStoreResource='null', trustStoreResource='null', keyStoreFormat='JKS', securityProvider='SunX509', passphrase='null', bossGroup=null, workerGroup=null, networkInterface='null', reconnect='true', reconnectInterval='10000'}]
+11   [main] INFO  org.apache.camel.component.netty.NettyComponent  - Creating shared NettyConsumerExecutorGroup with 17 threads
+155  [main] INFO  org.apache.camel.component.netty.SingleTCPNettyServerBootstrapFactory  - ServerBootstrap binding to localhost:8080
+225  [main] INFO  org.apache.camel.component.netty.NettyConsumer  - Netty consumer bound to: localhost:8080
+230  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  - Routes startup summary (total:1 started:1)
+230  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  -     Started route1 (rest://get:/v1/test)
+231  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  - Apache Camel 3.12.0 (camel-1) started in 495ms (build:76ms init:193ms start:226ms)
+10548 [Camel (camel-1) thread #2 - NettyConsumerExecutorGroup] INFO    - Exchange[ExchangePattern: InOut, BodyType: String, Body: ]
+0    [main] INFO  org.apache.camel.component.netty.http.HttpServerBootstrapFactory  - BootstrapFactory on port 8080 is using bootstrap configuration: [NettyServerBootstrapConfiguration{protocol='http', host='localhost', port=8080, broadcast=false, sendBufferSize=65536, receiveBufferSize=65536, receiveBufferSizePredictor=0, workerCount=0, bossCount=1, keepAlive=true, tcpNoDelay=true, reuseAddress=true, connectTimeout=10000, backlog=0, serverInitializerFactory=org.apache.camel.component.netty.http.HttpServerInitializerFactory@503f91c3, nettyServerBootstrapFactory=null, options=null, ssl=false, sslHandler=null, sslContextParameters='null', needClientAuth=false, enabledProtocols='TLSv1,TLSv1.1,TLSv1.2, keyStoreFile=null, trustStoreFile=null, keyStoreResource='null', trustStoreResource='null', keyStoreFormat='JKS', securityProvider='SunX509', passphrase='null', bossGroup=null, workerGroup=null, networkInterface='null', reconnect='true', reconnectInterval='10000'}]
+10   [main] INFO  org.apache.camel.component.netty.NettyComponent  - Creating shared NettyConsumerExecutorGroup with 17 threads
+185  [main] INFO  org.apache.camel.component.netty.SingleTCPNettyServerBootstrapFactory  - ServerBootstrap binding to localhost:8080
+257  [main] INFO  org.apache.camel.component.netty.NettyConsumer  - Netty consumer bound to: localhost:8080
+261  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  - Routes startup summary (total:1 started:1)
+261  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  -     Started route1 (rest://get:/v1/test)
+261  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  - Apache Camel 3.12.0 (camel-1) started in 513ms (build:67ms init:188ms start:258ms)
+3434 [Camel (camel-1) thread #2 - NettyConsumerExecutorGroup] INFO    - Exchange[ExchangePattern: InOut, BodyType: String, Body: ]
+4788 [Camel (camel-1) thread #2 - NettyConsumerExecutorGroup] INFO    - Exchange[ExchangePattern: InOut, BodyType: String, Body: ]
+5462 [Camel (camel-1) thread #2 - NettyConsumerExecutorGroup] INFO    - Exchange[ExchangePattern: InOut, BodyType: String, Body: ]
+6017 [Camel (camel-1) thread #2 - NettyConsumerExecutorGroup] INFO    - Exchange[ExchangePattern: InOut, BodyType: String, Body: ]
+0    [main] INFO  org.apache.camel.impl.engine.DefaultAutowiredLifecycleStrategy  - Autowired property: dataSource on component: sql as exactly one instance of type: javax.sql.DataSource (org.apache.commons.dbcp.BasicDataSource) found in the registry
+195  [main] INFO  org.apache.camel.component.netty.http.HttpServerBootstrapFactory  - BootstrapFactory on port 8080 is using bootstrap configuration: [NettyServerBootstrapConfiguration{protocol='http', host='localhost', port=8080, broadcast=false, sendBufferSize=65536, receiveBufferSize=65536, receiveBufferSizePredictor=0, workerCount=0, bossCount=1, keepAlive=true, tcpNoDelay=true, reuseAddress=true, connectTimeout=10000, backlog=0, serverInitializerFactory=org.apache.camel.component.netty.http.HttpServerInitializerFactory@362045c0, nettyServerBootstrapFactory=null, options=null, ssl=false, sslHandler=null, sslContextParameters='null', needClientAuth=false, enabledProtocols='TLSv1,TLSv1.1,TLSv1.2, keyStoreFile=null, trustStoreFile=null, keyStoreResource='null', trustStoreResource='null', keyStoreFormat='JKS', securityProvider='SunX509', passphrase='null', bossGroup=null, workerGroup=null, networkInterface='null', reconnect='true', reconnectInterval='10000'}]
+206  [main] INFO  org.apache.camel.component.netty.NettyComponent  - Creating shared NettyConsumerExecutorGroup with 17 threads
+246  [main] INFO  org.apache.camel.component.netty.SingleTCPNettyServerBootstrapFactory  - ServerBootstrap binding to localhost:8080
+300  [main] INFO  org.apache.camel.component.netty.NettyConsumer  - Netty consumer bound to: localhost:8080
+303  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  - Routes startup summary (total:2 started:2)
+303  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  -     Started route1 (direct://read)
+303  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  -     Started route2 (rest://get:/v1/test)
+303  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  - Apache Camel 3.12.0 (camel-1) started in 603ms (build:78ms init:420ms start:105ms)
+5907 [Camel (camel-1) thread #2 - NettyConsumerExecutorGroup] ERROR org.apache.camel.processor.errorhandler.DefaultErrorHandler  - Failed delivery for (MessageId: 5EA90AA4E6C7B9D-0000000000000000 on ExchangeId: 5EA90AA4E6C7B9D-0000000000000000). Exhausted after delivery attempt: 1 caught: java.sql.SQLException: Can not issue empty query.
+
+Message History (complete message history is disabled)
+---------------------------------------------------------------------------------------------------------------------------------------
+RouteId              ProcessorId          Processor                                                                        Elapsed (ms)
+[route2            ] [route2            ] [from[http://localhost:8080/v1/test?httpMethodRestrict=GET%2COPTIONS]          ] [       364]
+	...
+[route1            ] [to1               ] [jdbc:myDataSource                                                             ] [         0]
+
+Stacktrace
+---------------------------------------------------------------------------------------------------------------------------------------
+
+java.sql.SQLException: Can not issue empty query.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63)
+	at com.mysql.cj.jdbc.StatementImpl.checkNullOrEmptyQuery(StatementImpl.java:385)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:655)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:646)
+	at org.apache.commons.dbcp.DelegatingStatement.execute(DelegatingStatement.java:264)
+	at org.apache.commons.dbcp.DelegatingStatement.execute(DelegatingStatement.java:264)
+	at org.apache.camel.component.jdbc.JdbcProducer.doCreateAndExecuteSqlStatement(JdbcProducer.java:225)
+	at org.apache.camel.component.jdbc.JdbcProducer.createAndExecuteSqlStatement(JdbcProducer.java:128)
+	at org.apache.camel.component.jdbc.JdbcProducer.processingSqlBySettingAutoCommit(JdbcProducer.java:89)
+	at org.apache.camel.component.jdbc.JdbcProducer.process(JdbcProducer.java:70)
+	at org.apache.camel.support.AsyncProcessorConverterHelper$ProcessorToAsyncProcessorBridge.process(AsyncProcessorConverterHelper.java:66)
+	at org.apache.camel.processor.SendProcessor.process(SendProcessor.java:172)
+	at org.apache.camel.processor.errorhandler.RedeliveryErrorHandler$SimpleTask.run(RedeliveryErrorHandler.java:469)
+	at org.apache.camel.impl.engine.DefaultReactiveExecutor$Worker.schedule(DefaultReactiveExecutor.java:179)
+	at org.apache.camel.impl.engine.DefaultReactiveExecutor.scheduleMain(DefaultReactiveExecutor.java:64)
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:184)
+	at org.apache.camel.impl.engine.CamelInternalProcessor.process(CamelInternalProcessor.java:399)
+	at org.apache.camel.component.netty.handlers.ServerChannelHandler.processAsynchronously(ServerChannelHandler.java:150)
+	at org.apache.camel.component.netty.handlers.ServerChannelHandler.channelRead0(ServerChannelHandler.java:112)
+	at org.apache.camel.component.netty.http.handlers.HttpServerChannelHandler.channelRead0(HttpServerChannelHandler.java:224)
+	at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:99)
+	at org.apache.camel.component.netty.http.handlers.HttpServerMultiplexChannelHandler.channelRead0(HttpServerMultiplexChannelHandler.java:162)
+	at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:99)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.access$600(AbstractChannelHandlerContext.java:61)
+	at io.netty.channel.AbstractChannelHandlerContext$7.run(AbstractChannelHandlerContext.java:370)
+	at io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:66)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+0    [main] INFO  org.apache.camel.impl.engine.DefaultAutowiredLifecycleStrategy  - Autowired property: dataSource on component: sql as exactly one instance of type: javax.sql.DataSource (org.apache.commons.dbcp.BasicDataSource) found in the registry
+169  [main] INFO  org.apache.camel.component.netty.http.HttpServerBootstrapFactory  - BootstrapFactory on port 8080 is using bootstrap configuration: [NettyServerBootstrapConfiguration{protocol='http', host='localhost', port=8080, broadcast=false, sendBufferSize=65536, receiveBufferSize=65536, receiveBufferSizePredictor=0, workerCount=0, bossCount=1, keepAlive=true, tcpNoDelay=true, reuseAddress=true, connectTimeout=10000, backlog=0, serverInitializerFactory=org.apache.camel.component.netty.http.HttpServerInitializerFactory@4372b9b6, nettyServerBootstrapFactory=null, options=null, ssl=false, sslHandler=null, sslContextParameters='null', needClientAuth=false, enabledProtocols='TLSv1,TLSv1.1,TLSv1.2, keyStoreFile=null, trustStoreFile=null, keyStoreResource='null', trustStoreResource='null', keyStoreFormat='JKS', securityProvider='SunX509', passphrase='null', bossGroup=null, workerGroup=null, networkInterface='null', reconnect='true', reconnectInterval='10000'}]
+179  [main] INFO  org.apache.camel.component.netty.NettyComponent  - Creating shared NettyConsumerExecutorGroup with 17 threads
+223  [main] INFO  org.apache.camel.component.netty.SingleTCPNettyServerBootstrapFactory  - ServerBootstrap binding to localhost:8080
+288  [main] INFO  org.apache.camel.component.netty.NettyConsumer  - Netty consumer bound to: localhost:8080
+291  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  - Routes startup summary (total:2 started:2)
+291  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  -     Started route1 (direct://read)
+291  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  -     Started route2 (rest://get:/v1/test)
+291  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  - Apache Camel 3.12.0 (camel-1) started in 596ms (build:79ms init:398ms start:119ms)
+6590 [Camel (camel-1) thread #2 - NettyConsumerExecutorGroup] ERROR org.apache.camel.processor.errorhandler.DefaultErrorHandler  - Failed delivery for (MessageId: 26733F878D11CF3-0000000000000000 on ExchangeId: 26733F878D11CF3-0000000000000000). Exhausted after delivery attempt: 1 caught: java.sql.SQLException: Can not issue empty query.
+
+Message History (complete message history is disabled)
+---------------------------------------------------------------------------------------------------------------------------------------
+RouteId              ProcessorId          Processor                                                                        Elapsed (ms)
+[route2            ] [route2            ] [from[http://localhost:8080/v1/test?httpMethodRestrict=GET%2COPTIONS]          ] [       331]
+	...
+[route1            ] [to1               ] [jdbc:myDataSource                                                             ] [         0]
+
+Stacktrace
+---------------------------------------------------------------------------------------------------------------------------------------
+
+java.sql.SQLException: Can not issue empty query.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63)
+	at com.mysql.cj.jdbc.StatementImpl.checkNullOrEmptyQuery(StatementImpl.java:385)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:655)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:646)
+	at org.apache.commons.dbcp.DelegatingStatement.execute(DelegatingStatement.java:264)
+	at org.apache.commons.dbcp.DelegatingStatement.execute(DelegatingStatement.java:264)
+	at org.apache.camel.component.jdbc.JdbcProducer.doCreateAndExecuteSqlStatement(JdbcProducer.java:225)
+	at org.apache.camel.component.jdbc.JdbcProducer.createAndExecuteSqlStatement(JdbcProducer.java:128)
+	at org.apache.camel.component.jdbc.JdbcProducer.processingSqlBySettingAutoCommit(JdbcProducer.java:89)
+	at org.apache.camel.component.jdbc.JdbcProducer.process(JdbcProducer.java:70)
+	at org.apache.camel.support.AsyncProcessorConverterHelper$ProcessorToAsyncProcessorBridge.process(AsyncProcessorConverterHelper.java:66)
+	at org.apache.camel.processor.SendProcessor.process(SendProcessor.java:172)
+	at org.apache.camel.processor.errorhandler.RedeliveryErrorHandler$SimpleTask.run(RedeliveryErrorHandler.java:469)
+	at org.apache.camel.impl.engine.DefaultReactiveExecutor$Worker.schedule(DefaultReactiveExecutor.java:179)
+	at org.apache.camel.impl.engine.DefaultReactiveExecutor.scheduleMain(DefaultReactiveExecutor.java:64)
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:184)
+	at org.apache.camel.impl.engine.CamelInternalProcessor.process(CamelInternalProcessor.java:399)
+	at org.apache.camel.component.netty.handlers.ServerChannelHandler.processAsynchronously(ServerChannelHandler.java:150)
+	at org.apache.camel.component.netty.handlers.ServerChannelHandler.channelRead0(ServerChannelHandler.java:112)
+	at org.apache.camel.component.netty.http.handlers.HttpServerChannelHandler.channelRead0(HttpServerChannelHandler.java:224)
+	at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:99)
+	at org.apache.camel.component.netty.http.handlers.HttpServerMultiplexChannelHandler.channelRead0(HttpServerMultiplexChannelHandler.java:162)
+	at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:99)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.access$600(AbstractChannelHandlerContext.java:61)
+	at io.netty.channel.AbstractChannelHandlerContext$7.run(AbstractChannelHandlerContext.java:370)
+	at io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:66)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+7533 [Camel (camel-1) thread #2 - NettyConsumerExecutorGroup] ERROR org.apache.camel.processor.errorhandler.DefaultErrorHandler  - Failed delivery for (MessageId: 26733F878D11CF3-0000000000000001 on ExchangeId: 26733F878D11CF3-0000000000000001). Exhausted after delivery attempt: 1 caught: java.sql.SQLException: Can not issue empty query.
+
+Message History (complete message history is disabled)
+---------------------------------------------------------------------------------------------------------------------------------------
+RouteId              ProcessorId          Processor                                                                        Elapsed (ms)
+[route2            ] [route2            ] [from[http://localhost:8080/v1/test?httpMethodRestrict=GET%2COPTIONS]          ] [         8]
+	...
+[route1            ] [to1               ] [jdbc:myDataSource                                                             ] [         0]
+
+Stacktrace
+---------------------------------------------------------------------------------------------------------------------------------------
+
+java.sql.SQLException: Can not issue empty query.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63)
+	at com.mysql.cj.jdbc.StatementImpl.checkNullOrEmptyQuery(StatementImpl.java:385)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:655)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:646)
+	at org.apache.commons.dbcp.DelegatingStatement.execute(DelegatingStatement.java:264)
+	at org.apache.commons.dbcp.DelegatingStatement.execute(DelegatingStatement.java:264)
+	at org.apache.camel.component.jdbc.JdbcProducer.doCreateAndExecuteSqlStatement(JdbcProducer.java:225)
+	at org.apache.camel.component.jdbc.JdbcProducer.createAndExecuteSqlStatement(JdbcProducer.java:128)
+	at org.apache.camel.component.jdbc.JdbcProducer.processingSqlBySettingAutoCommit(JdbcProducer.java:89)
+	at org.apache.camel.component.jdbc.JdbcProducer.process(JdbcProducer.java:70)
+	at org.apache.camel.support.AsyncProcessorConverterHelper$ProcessorToAsyncProcessorBridge.process(AsyncProcessorConverterHelper.java:66)
+	at org.apache.camel.processor.SendProcessor.process(SendProcessor.java:172)
+	at org.apache.camel.processor.errorhandler.RedeliveryErrorHandler$SimpleTask.run(RedeliveryErrorHandler.java:469)
+	at org.apache.camel.impl.engine.DefaultReactiveExecutor$Worker.schedule(DefaultReactiveExecutor.java:179)
+	at org.apache.camel.impl.engine.DefaultReactiveExecutor.scheduleMain(DefaultReactiveExecutor.java:64)
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:184)
+	at org.apache.camel.impl.engine.CamelInternalProcessor.process(CamelInternalProcessor.java:399)
+	at org.apache.camel.component.netty.handlers.ServerChannelHandler.processAsynchronously(ServerChannelHandler.java:150)
+	at org.apache.camel.component.netty.handlers.ServerChannelHandler.channelRead0(ServerChannelHandler.java:112)
+	at org.apache.camel.component.netty.http.handlers.HttpServerChannelHandler.channelRead0(HttpServerChannelHandler.java:224)
+	at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:99)
+	at org.apache.camel.component.netty.http.handlers.HttpServerMultiplexChannelHandler.channelRead0(HttpServerMultiplexChannelHandler.java:162)
+	at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:99)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.access$600(AbstractChannelHandlerContext.java:61)
+	at io.netty.channel.AbstractChannelHandlerContext$7.run(AbstractChannelHandlerContext.java:370)
+	at io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:66)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+0    [main] INFO  org.apache.camel.impl.engine.DefaultAutowiredLifecycleStrategy  - Autowired property: dataSource on component: sql as exactly one instance of type: javax.sql.DataSource (org.apache.commons.dbcp.BasicDataSource) found in the registry
+178  [main] INFO  org.apache.camel.component.netty.http.HttpServerBootstrapFactory  - BootstrapFactory on port 8080 is using bootstrap configuration: [NettyServerBootstrapConfiguration{protocol='http', host='localhost', port=8080, broadcast=false, sendBufferSize=65536, receiveBufferSize=65536, receiveBufferSizePredictor=0, workerCount=0, bossCount=1, keepAlive=true, tcpNoDelay=true, reuseAddress=true, connectTimeout=10000, backlog=0, serverInitializerFactory=org.apache.camel.component.netty.http.HttpServerInitializerFactory@604c5de8, nettyServerBootstrapFactory=null, options=null, ssl=false, sslHandler=null, sslContextParameters='null', needClientAuth=false, enabledProtocols='TLSv1,TLSv1.1,TLSv1.2, keyStoreFile=null, trustStoreFile=null, keyStoreResource='null', trustStoreResource='null', keyStoreFormat='JKS', securityProvider='SunX509', passphrase='null', bossGroup=null, workerGroup=null, networkInterface='null', reconnect='true', reconnectInterval='10000'}]
+188  [main] INFO  org.apache.camel.component.netty.NettyComponent  - Creating shared NettyConsumerExecutorGroup with 17 threads
+224  [main] INFO  org.apache.camel.component.netty.SingleTCPNettyServerBootstrapFactory  - ServerBootstrap binding to localhost:8080
+287  [main] INFO  org.apache.camel.component.netty.NettyConsumer  - Netty consumer bound to: localhost:8080
+290  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  - Routes startup summary (total:2 started:2)
+290  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  -     Started route1 (direct://read)
+290  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  -     Started route2 (rest://get:/v1/test)
+291  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  - Apache Camel 3.12.0 (camel-1) started in 570ms (build:81ms init:380ms start:109ms)
+0    [main] INFO  org.apache.camel.impl.engine.DefaultAutowiredLifecycleStrategy  - Autowired property: dataSource on component: sql as exactly one instance of type: javax.sql.DataSource (org.apache.commons.dbcp.BasicDataSource) found in the registry
+181  [main] INFO  org.apache.camel.component.netty.http.HttpServerBootstrapFactory  - BootstrapFactory on port 8080 is using bootstrap configuration: [NettyServerBootstrapConfiguration{protocol='http', host='localhost', port=8080, broadcast=false, sendBufferSize=65536, receiveBufferSize=65536, receiveBufferSizePredictor=0, workerCount=0, bossCount=1, keepAlive=true, tcpNoDelay=true, reuseAddress=true, connectTimeout=10000, backlog=0, serverInitializerFactory=org.apache.camel.component.netty.http.HttpServerInitializerFactory@2cc44ad, nettyServerBootstrapFactory=null, options=null, ssl=false, sslHandler=null, sslContextParameters='null', needClientAuth=false, enabledProtocols='TLSv1,TLSv1.1,TLSv1.2, keyStoreFile=null, trustStoreFile=null, keyStoreResource='null', trustStoreResource='null', keyStoreFormat='JKS', securityProvider='SunX509', passphrase='null', bossGroup=null, workerGroup=null, networkInterface='null', reconnect='true', reconnectInterval='10000'}]
+191  [main] INFO  org.apache.camel.component.netty.NettyComponent  - Creating shared NettyConsumerExecutorGroup with 17 threads
+247  [main] INFO  org.apache.camel.component.netty.SingleTCPNettyServerBootstrapFactory  - ServerBootstrap binding to localhost:8080
+321  [main] INFO  org.apache.camel.component.netty.NettyConsumer  - Netty consumer bound to: localhost:8080
+324  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  - Routes startup summary (total:2 started:2)
+324  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  -     Started route1 (direct://read)
+324  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  -     Started route2 (rest://get:/v1/test)
+324  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  - Apache Camel 3.12.0 (camel-1) started in 583ms (build:70ms init:373ms start:140ms)
+3167 [Camel (camel-1) thread #2 - NettyConsumerExecutorGroup] INFO    - Exchange[ExchangePattern: InOut, BodyType: java.util.ArrayList, Body: [{id=1, message=first db input, create_date=2021-12-19 17:05:52.0}, {id=1, message=first db input, create_date=2021-12-19 17:07:01.0}, {id=1, message=first db input, create_date=2021-12-19 17:07:06.0}, {id=1, message=first db input, create_date=2021-12-19 17:08:28.0}, {id=1, message=first db input, create_date=2021-12-19 19:45:07.0}, {id=1, message=first db input, create_date=2021-12-19 19:59:30.0}, {id=1, message=first db input, create_date=2021-12-19 20:01:48.0}, {id=1, message=first db input, create_date=2021-12-19 21:13:21.0}, {id=1, message=first db input, create_date=2021-12-19 21:27:10.0}]]
+0    [main] INFO  org.apache.camel.impl.engine.DefaultAutowiredLifecycleStrategy  - Autowired property: dataSource on component: sql as exactly one instance of type: javax.sql.DataSource (org.apache.commons.dbcp.BasicDataSource) found in the registry
+0    [main] INFO  org.apache.camel.impl.engine.DefaultAutowiredLifecycleStrategy  - Autowired property: dataSource on component: sql as exactly one instance of type: javax.sql.DataSource (org.apache.commons.dbcp.BasicDataSource) found in the registry
+199  [main] INFO  org.apache.camel.component.netty.http.HttpServerBootstrapFactory  - BootstrapFactory on port 8080 is using bootstrap configuration: [NettyServerBootstrapConfiguration{protocol='http', host='localhost', port=8080, broadcast=false, sendBufferSize=65536, receiveBufferSize=65536, receiveBufferSizePredictor=0, workerCount=0, bossCount=1, keepAlive=true, tcpNoDelay=true, reuseAddress=true, connectTimeout=10000, backlog=0, serverInitializerFactory=org.apache.camel.component.netty.http.HttpServerInitializerFactory@2cc44ad, nettyServerBootstrapFactory=null, options=null, ssl=false, sslHandler=null, sslContextParameters='null', needClientAuth=false, enabledProtocols='TLSv1,TLSv1.1,TLSv1.2, keyStoreFile=null, trustStoreFile=null, keyStoreResource='null', trustStoreResource='null', keyStoreFormat='JKS', securityProvider='SunX509', passphrase='null', bossGroup=null, workerGroup=null, networkInterface='null', reconnect='true', reconnectInterval='10000'}]
+212  [main] INFO  org.apache.camel.component.netty.NettyComponent  - Creating shared NettyConsumerExecutorGroup with 17 threads
+263  [main] INFO  org.apache.camel.component.netty.SingleTCPNettyServerBootstrapFactory  - ServerBootstrap binding to localhost:8080
+349  [main] INFO  org.apache.camel.component.netty.NettyConsumer  - Netty consumer bound to: localhost:8080
+353  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  - Routes startup summary (total:2 started:2)
+353  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  -     Started route1 (direct://read)
+353  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  -     Started route2 (rest://get:/v1/test)
+353  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  - Apache Camel 3.12.0 (camel-1) started in 647ms (build:77ms init:419ms start:151ms)
+1089700 [Camel (camel-1) thread #2 - NettyConsumerExecutorGroup] INFO    - Exchange[ExchangePattern: InOut, BodyType: java.util.ArrayList, Body: [{id=1, message=first db input, create_date=2021-12-19 17:05:52.0}, {id=1, message=first db input, create_date=2021-12-19 17:07:01.0}, {id=1, message=first db input, create_date=2021-12-19 17:07:06.0}, {id=1, message=first db input, create_date=2021-12-19 17:08:28.0}, {id=1, message=first db input, create_date=2021-12-19 19:45:07.0}, {id=1, message=first db input, create_date=2021-12-19 19:59:30.0}, {id=1, message=first db input, create_date=2021-12-19 20:01:48.0}, {id=1, message=first db input, create_date=2021-12-19 21:13:21.0}, {id=1, message=first db input, create_date=2021-12-19 21:27:10.0}]]
+0    [main] INFO  org.apache.camel.impl.engine.DefaultAutowiredLifecycleStrategy  - Autowired property: dataSource on component: sql as exactly one instance of type: javax.sql.DataSource (org.apache.commons.dbcp.BasicDataSource) found in the registry
+297  [main] INFO  org.apache.camel.component.netty.http.HttpServerBootstrapFactory  - BootstrapFactory on port 8080 is using bootstrap configuration: [NettyServerBootstrapConfiguration{protocol='http', host='localhost', port=8080, broadcast=false, sendBufferSize=65536, receiveBufferSize=65536, receiveBufferSizePredictor=0, workerCount=0, bossCount=1, keepAlive=true, tcpNoDelay=true, reuseAddress=true, connectTimeout=10000, backlog=0, serverInitializerFactory=org.apache.camel.component.netty.http.HttpServerInitializerFactory@19648c40, nettyServerBootstrapFactory=null, options=null, ssl=false, sslHandler=null, sslContextParameters='null', needClientAuth=false, enabledProtocols='TLSv1,TLSv1.1,TLSv1.2, keyStoreFile=null, trustStoreFile=null, keyStoreResource='null', trustStoreResource='null', keyStoreFormat='JKS', securityProvider='SunX509', passphrase='null', bossGroup=null, workerGroup=null, networkInterface='null', reconnect='true', reconnectInterval='10000'}]
+318  [main] INFO  org.apache.camel.component.netty.NettyComponent  - Creating shared NettyConsumerExecutorGroup with 17 threads
+367  [main] INFO  org.apache.camel.component.netty.SingleTCPNettyServerBootstrapFactory  - ServerBootstrap binding to localhost:8080
+453  [main] INFO  org.apache.camel.component.netty.NettyConsumer  - Netty consumer bound to: localhost:8080
+456  [main] INFO  org.apache.camel.component.netty.NettyConsumer  - Netty consumer bound to: localhost:8080
+458  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  - Routes startup summary (total:3 started:3)
+458  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  -     Started route1 (direct://read)
+458  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  -     Started route2 (rest://get:/v1/test)
+458  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  -     Started route3 (rest://get:/v1/test/%7Btext%7D)
+458  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  - Apache Camel 3.12.0 (camel-1) started in 773ms (build:83ms init:534ms start:156ms)
+15029 [Camel (camel-1) thread #2 - NettyConsumerExecutorGroup] ERROR org.apache.camel.processor.errorhandler.DefaultErrorHandler  - Failed delivery for (MessageId: B5391C7189A0451-0000000000000000 on ExchangeId: B5391C7189A0451-0000000000000000). Exhausted after delivery attempt: 1 caught: java.lang.NullPointerException
+
+Message History (complete message history is disabled)
+---------------------------------------------------------------------------------------------------------------------------------------
+RouteId              ProcessorId          Processor                                                                        Elapsed (ms)
+[route2            ] [route2            ] [from[http://localhost:8080/v1/test?httpMethodRestrict=GET%2COPTIONS]          ] [        10]
+	...
+[route1            ] [choice1           ] [choice[when[{restToMongo.RestApiToMysql$$Lambda$79/0x00000008400cf840@c267ef4}] [         0]
+
+Stacktrace
+---------------------------------------------------------------------------------------------------------------------------------------
+
+java.lang.NullPointerException
+	at restToMongo.RestApiToMysql.lambda$configure$0(RestApiToMysql.java:34)
+	at org.apache.camel.processor.FilterProcessor.matches(FilterProcessor.java:77)
+	at org.apache.camel.processor.ChoiceProcessor.process(ChoiceProcessor.java:71)
+	at org.apache.camel.processor.errorhandler.RedeliveryErrorHandler$SimpleTask.run(RedeliveryErrorHandler.java:469)
+	at org.apache.camel.impl.engine.DefaultReactiveExecutor$Worker.schedule(DefaultReactiveExecutor.java:179)
+	at org.apache.camel.impl.engine.DefaultReactiveExecutor.scheduleMain(DefaultReactiveExecutor.java:64)
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:184)
+	at org.apache.camel.impl.engine.CamelInternalProcessor.process(CamelInternalProcessor.java:399)
+	at org.apache.camel.component.netty.handlers.ServerChannelHandler.processAsynchronously(ServerChannelHandler.java:150)
+	at org.apache.camel.component.netty.handlers.ServerChannelHandler.channelRead0(ServerChannelHandler.java:112)
+	at org.apache.camel.component.netty.http.handlers.HttpServerChannelHandler.channelRead0(HttpServerChannelHandler.java:224)
+	at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:99)
+	at org.apache.camel.component.netty.http.handlers.HttpServerMultiplexChannelHandler.channelRead0(HttpServerMultiplexChannelHandler.java:162)
+	at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:99)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.access$600(AbstractChannelHandlerContext.java:61)
+	at io.netty.channel.AbstractChannelHandlerContext$7.run(AbstractChannelHandlerContext.java:370)
+	at io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:66)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+0    [main] INFO  org.apache.camel.impl.engine.DefaultAutowiredLifecycleStrategy  - Autowired property: dataSource on component: sql as exactly one instance of type: javax.sql.DataSource (org.apache.commons.dbcp.BasicDataSource) found in the registry
+206  [main] INFO  org.apache.camel.component.netty.http.HttpServerBootstrapFactory  - BootstrapFactory on port 8080 is using bootstrap configuration: [NettyServerBootstrapConfiguration{protocol='http', host='localhost', port=8080, broadcast=false, sendBufferSize=65536, receiveBufferSize=65536, receiveBufferSizePredictor=0, workerCount=0, bossCount=1, keepAlive=true, tcpNoDelay=true, reuseAddress=true, connectTimeout=10000, backlog=0, serverInitializerFactory=org.apache.camel.component.netty.http.HttpServerInitializerFactory@19648c40, nettyServerBootstrapFactory=null, options=null, ssl=false, sslHandler=null, sslContextParameters='null', needClientAuth=false, enabledProtocols='TLSv1,TLSv1.1,TLSv1.2, keyStoreFile=null, trustStoreFile=null, keyStoreResource='null', trustStoreResource='null', keyStoreFormat='JKS', securityProvider='SunX509', passphrase='null', bossGroup=null, workerGroup=null, networkInterface='null', reconnect='true', reconnectInterval='10000'}]
+222  [main] INFO  org.apache.camel.component.netty.NettyComponent  - Creating shared NettyConsumerExecutorGroup with 17 threads
+275  [main] INFO  org.apache.camel.component.netty.SingleTCPNettyServerBootstrapFactory  - ServerBootstrap binding to localhost:8080
+379  [main] INFO  org.apache.camel.component.netty.NettyConsumer  - Netty consumer bound to: localhost:8080
+382  [main] INFO  org.apache.camel.component.netty.NettyConsumer  - Netty consumer bound to: localhost:8080
+384  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  - Routes startup summary (total:3 started:3)
+384  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  -     Started route1 (direct://read)
+384  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  -     Started route2 (rest://get:/v1/test)
+384  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  -     Started route3 (rest://get:/v1/test/%7Btext%7D)
+384  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  - Apache Camel 3.12.0 (camel-1) started in 688ms (build:76ms init:440ms start:172ms)
+12351 [Camel (camel-1) thread #2 - NettyConsumerExecutorGroup] INFO    - Exchange[ExchangePattern: InOut, BodyType: java.util.ArrayList, Body: []]
+0    [main] INFO  org.apache.camel.impl.engine.DefaultAutowiredLifecycleStrategy  - Autowired property: dataSource on component: sql as exactly one instance of type: javax.sql.DataSource (org.apache.commons.dbcp.BasicDataSource) found in the registry
+225  [main] INFO  org.apache.camel.component.netty.http.HttpServerBootstrapFactory  - BootstrapFactory on port 8080 is using bootstrap configuration: [NettyServerBootstrapConfiguration{protocol='http', host='localhost', port=8080, broadcast=false, sendBufferSize=65536, receiveBufferSize=65536, receiveBufferSizePredictor=0, workerCount=0, bossCount=1, keepAlive=true, tcpNoDelay=true, reuseAddress=true, connectTimeout=10000, backlog=0, serverInitializerFactory=org.apache.camel.component.netty.http.HttpServerInitializerFactory@3300f4fd, nettyServerBootstrapFactory=null, options=null, ssl=false, sslHandler=null, sslContextParameters='null', needClientAuth=false, enabledProtocols='TLSv1,TLSv1.1,TLSv1.2, keyStoreFile=null, trustStoreFile=null, keyStoreResource='null', trustStoreResource='null', keyStoreFormat='JKS', securityProvider='SunX509', passphrase='null', bossGroup=null, workerGroup=null, networkInterface='null', reconnect='true', reconnectInterval='10000'}]
+239  [main] INFO  org.apache.camel.component.netty.NettyComponent  - Creating shared NettyConsumerExecutorGroup with 17 threads
+294  [main] INFO  org.apache.camel.component.netty.SingleTCPNettyServerBootstrapFactory  - ServerBootstrap binding to localhost:8080
+373  [main] INFO  org.apache.camel.component.netty.NettyConsumer  - Netty consumer bound to: localhost:8080
+376  [main] INFO  org.apache.camel.component.netty.NettyConsumer  - Netty consumer bound to: localhost:8080
+378  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  - Routes startup summary (total:3 started:3)
+378  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  -     Started route1 (direct://read)
+378  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  -     Started route2 (rest://get:/v1/test)
+378  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  -     Started route3 (rest://get:/v1/test/%7Btext%7D)
+378  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  - Apache Camel 3.12.0 (camel-1) started in 657ms (build:70ms init:439ms start:148ms)
+5033 [Camel (camel-1) thread #2 - NettyConsumerExecutorGroup] INFO    - Exchange[ExchangePattern: InOut, BodyType: String, Body: ]
+5360 [Camel (camel-1) thread #2 - NettyConsumerExecutorGroup] INFO    - Exchange[ExchangePattern: InOut, BodyType: java.util.ArrayList, Body: []]
+8453 [Camel (camel-1) thread #2 - NettyConsumerExecutorGroup] INFO    - Exchange[ExchangePattern: InOut, BodyType: String, Body: ]
+8459 [Camel (camel-1) thread #2 - NettyConsumerExecutorGroup] INFO    - Exchange[ExchangePattern: InOut, BodyType: java.util.ArrayList, Body: []]
+0    [main] INFO  org.apache.camel.impl.engine.DefaultAutowiredLifecycleStrategy  - Autowired property: dataSource on component: sql as exactly one instance of type: javax.sql.DataSource (org.apache.commons.dbcp.BasicDataSource) found in the registry
+186  [main] INFO  org.apache.camel.component.netty.http.HttpServerBootstrapFactory  - BootstrapFactory on port 8080 is using bootstrap configuration: [NettyServerBootstrapConfiguration{protocol='http', host='localhost', port=8080, broadcast=false, sendBufferSize=65536, receiveBufferSize=65536, receiveBufferSizePredictor=0, workerCount=0, bossCount=1, keepAlive=true, tcpNoDelay=true, reuseAddress=true, connectTimeout=10000, backlog=0, serverInitializerFactory=org.apache.camel.component.netty.http.HttpServerInitializerFactory@ebb6851, nettyServerBootstrapFactory=null, options=null, ssl=false, sslHandler=null, sslContextParameters='null', needClientAuth=false, enabledProtocols='TLSv1,TLSv1.1,TLSv1.2, keyStoreFile=null, trustStoreFile=null, keyStoreResource='null', trustStoreResource='null', keyStoreFormat='JKS', securityProvider='SunX509', passphrase='null', bossGroup=null, workerGroup=null, networkInterface='null', reconnect='true', reconnectInterval='10000'}]
+197  [main] INFO  org.apache.camel.component.netty.NettyComponent  - Creating shared NettyConsumerExecutorGroup with 17 threads
+246  [main] INFO  org.apache.camel.component.netty.SingleTCPNettyServerBootstrapFactory  - ServerBootstrap binding to localhost:8080
+318  [main] INFO  org.apache.camel.component.netty.NettyConsumer  - Netty consumer bound to: localhost:8080
+321  [main] INFO  org.apache.camel.component.netty.NettyConsumer  - Netty consumer bound to: localhost:8080
+322  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  - Routes startup summary (total:3 started:3)
+322  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  -     Started route1 (direct://read)
+322  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  -     Started route2 (rest://get:/v1/test)
+322  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  -     Started route3 (rest://get:/v1/test/%7Btext%7D)
+322  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  - Apache Camel 3.12.0 (camel-1) started in 609ms (build:73ms init:405ms start:131ms)
+4684 [Camel (camel-1) thread #2 - NettyConsumerExecutorGroup] INFO    - Exchange[ExchangePattern: InOut, BodyType: java.util.ArrayList, Body: []]
+0    [main] INFO  org.apache.camel.impl.engine.DefaultAutowiredLifecycleStrategy  - Autowired property: dataSource on component: sql as exactly one instance of type: javax.sql.DataSource (org.apache.commons.dbcp.BasicDataSource) found in the registry
+182  [main] INFO  org.apache.camel.component.netty.http.HttpServerBootstrapFactory  - BootstrapFactory on port 8080 is using bootstrap configuration: [NettyServerBootstrapConfiguration{protocol='http', host='localhost', port=8080, broadcast=false, sendBufferSize=65536, receiveBufferSize=65536, receiveBufferSizePredictor=0, workerCount=0, bossCount=1, keepAlive=true, tcpNoDelay=true, reuseAddress=true, connectTimeout=10000, backlog=0, serverInitializerFactory=org.apache.camel.component.netty.http.HttpServerInitializerFactory@1f6c9cd8, nettyServerBootstrapFactory=null, options=null, ssl=false, sslHandler=null, sslContextParameters='null', needClientAuth=false, enabledProtocols='TLSv1,TLSv1.1,TLSv1.2, keyStoreFile=null, trustStoreFile=null, keyStoreResource='null', trustStoreResource='null', keyStoreFormat='JKS', securityProvider='SunX509', passphrase='null', bossGroup=null, workerGroup=null, networkInterface='null', reconnect='true', reconnectInterval='10000'}]
+198  [main] INFO  org.apache.camel.component.netty.NettyComponent  - Creating shared NettyConsumerExecutorGroup with 17 threads
+246  [main] INFO  org.apache.camel.component.netty.SingleTCPNettyServerBootstrapFactory  - ServerBootstrap binding to localhost:8080
+319  [main] INFO  org.apache.camel.component.netty.NettyConsumer  - Netty consumer bound to: localhost:8080
+321  [main] INFO  org.apache.camel.component.netty.NettyConsumer  - Netty consumer bound to: localhost:8080
+324  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  - Routes startup summary (total:4 started:4)
+324  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  -     Started route1 (direct://read)
+324  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  -     Started route2 (direct://search)
+324  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  -     Started route3 (rest://get:/v1/test)
+324  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  -     Started route4 (rest://get:/v1/test/%7Btext%7D)
+324  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  - Apache Camel 3.12.0 (camel-1) started in 616ms (build:90ms init:390ms start:136ms)
+4886 [Camel (camel-1) thread #2 - NettyConsumerExecutorGroup] INFO    - Exchange[ExchangePattern: InOut, BodyType: java.util.ArrayList, Body: []]
+71406 [Camel (camel-1) thread #2 - NettyConsumerExecutorGroup] INFO    - Exchange[ExchangePattern: InOut, BodyType: java.util.ArrayList, Body: []]
+0    [main] INFO  org.apache.camel.impl.engine.DefaultAutowiredLifecycleStrategy  - Autowired property: dataSource on component: sql as exactly one instance of type: javax.sql.DataSource (org.apache.commons.dbcp.BasicDataSource) found in the registry
+206  [main] INFO  org.apache.camel.component.netty.http.HttpServerBootstrapFactory  - BootstrapFactory on port 8080 is using bootstrap configuration: [NettyServerBootstrapConfiguration{protocol='http', host='localhost', port=8080, broadcast=false, sendBufferSize=65536, receiveBufferSize=65536, receiveBufferSizePredictor=0, workerCount=0, bossCount=1, keepAlive=true, tcpNoDelay=true, reuseAddress=true, connectTimeout=10000, backlog=0, serverInitializerFactory=org.apache.camel.component.netty.http.HttpServerInitializerFactory@1f6c9cd8, nettyServerBootstrapFactory=null, options=null, ssl=false, sslHandler=null, sslContextParameters='null', needClientAuth=false, enabledProtocols='TLSv1,TLSv1.1,TLSv1.2, keyStoreFile=null, trustStoreFile=null, keyStoreResource='null', trustStoreResource='null', keyStoreFormat='JKS', securityProvider='SunX509', passphrase='null', bossGroup=null, workerGroup=null, networkInterface='null', reconnect='true', reconnectInterval='10000'}]
+222  [main] INFO  org.apache.camel.component.netty.NettyComponent  - Creating shared NettyConsumerExecutorGroup with 17 threads
+262  [main] INFO  org.apache.camel.component.netty.SingleTCPNettyServerBootstrapFactory  - ServerBootstrap binding to localhost:8080
+337  [main] INFO  org.apache.camel.component.netty.NettyConsumer  - Netty consumer bound to: localhost:8080
+339  [main] INFO  org.apache.camel.component.netty.NettyConsumer  - Netty consumer bound to: localhost:8080
+340  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  - Routes startup summary (total:4 started:4)
+341  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  -     Started route1 (direct://read)
+341  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  -     Started route2 (direct://search)
+341  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  -     Started route3 (rest://get:/v1/test)
+341  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  -     Started route4 (rest://get:/v1/test/%7Btext%7D)
+341  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  - Apache Camel 3.12.0 (camel-1) started in 614ms (build:72ms init:414ms start:128ms)
+7590 [Camel (camel-1) thread #2 - NettyConsumerExecutorGroup] INFO    - Exchange[ExchangePattern: InOut, BodyType: java.util.ArrayList, Body: []]
+9635 [Camel (camel-1) thread #2 - NettyConsumerExecutorGroup] INFO    - Exchange[ExchangePattern: InOut, BodyType: java.util.ArrayList, Body: []]
+13731 [Camel (camel-1) thread #2 - NettyConsumerExecutorGroup] INFO    - Exchange[ExchangePattern: InOut, BodyType: java.util.ArrayList, Body: []]
+0    [main] INFO  org.apache.camel.impl.engine.DefaultAutowiredLifecycleStrategy  - Autowired property: dataSource on component: sql as exactly one instance of type: javax.sql.DataSource (org.apache.commons.dbcp.BasicDataSource) found in the registry
+0    [main] INFO  org.apache.camel.impl.engine.DefaultAutowiredLifecycleStrategy  - Autowired property: dataSource on component: sql as exactly one instance of type: javax.sql.DataSource (org.apache.commons.dbcp.BasicDataSource) found in the registry
+190  [main] INFO  org.apache.camel.component.netty.http.HttpServerBootstrapFactory  - BootstrapFactory on port 8080 is using bootstrap configuration: [NettyServerBootstrapConfiguration{protocol='http', host='localhost', port=8080, broadcast=false, sendBufferSize=65536, receiveBufferSize=65536, receiveBufferSizePredictor=0, workerCount=0, bossCount=1, keepAlive=true, tcpNoDelay=true, reuseAddress=true, connectTimeout=10000, backlog=0, serverInitializerFactory=org.apache.camel.component.netty.http.HttpServerInitializerFactory@6d23017e, nettyServerBootstrapFactory=null, options=null, ssl=false, sslHandler=null, sslContextParameters='null', needClientAuth=false, enabledProtocols='TLSv1,TLSv1.1,TLSv1.2, keyStoreFile=null, trustStoreFile=null, keyStoreResource='null', trustStoreResource='null', keyStoreFormat='JKS', securityProvider='SunX509', passphrase='null', bossGroup=null, workerGroup=null, networkInterface='null', reconnect='true', reconnectInterval='10000'}]
+206  [main] INFO  org.apache.camel.component.netty.NettyComponent  - Creating shared NettyConsumerExecutorGroup with 17 threads
+247  [main] INFO  org.apache.camel.component.netty.SingleTCPNettyServerBootstrapFactory  - ServerBootstrap binding to localhost:8080
+309  [main] INFO  org.apache.camel.component.netty.NettyConsumer  - Netty consumer bound to: localhost:8080
+310  [main] INFO  org.apache.camel.component.netty.NettyConsumer  - Netty consumer bound to: localhost:8080
+312  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  - Routes startup summary (total:4 started:4)
+313  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  -     Started route1 (direct://read)
+313  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  -     Started route2 (direct://search)
+313  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  -     Started route3 (rest://get:/v1/test)
+313  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  -     Started route4 (rest://get:/v1/test/%7Btext%7D)
+313  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  - Apache Camel 3.12.0 (camel-1) started in 583ms (build:71ms init:394ms start:118ms)
+4048 [Camel (camel-1) thread #2 - NettyConsumerExecutorGroup] INFO    - Exchange[ExchangePattern: InOut, Headers: {Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9, Accept-Encoding=gzip, deflate, br, Accept-Language=en-US,en;q=0.9, Cache-Control=max-age=0, CamelHttpHost=null, CamelHttpMethod=GET, CamelHttpPath=/v1/test/frist, CamelHttpPort=80, CamelHttpQuery=null, CamelHttpRawQuery=null, CamelHttpScheme=null, CamelHttpUri=/v1/test/frist, CamelHttpUrl=http://localhost:8080/v1/test/frist, CamelNettyChannelHandlerContext=ChannelHandlerContext(handler, [id: 0xdeac8071, L:/127.0.0.1:8080 - R:/127.0.0.1:50650]), CamelNettyLocalAddress=/127.0.0.1:8080, CamelNettyRemoteAddress=/127.0.0.1:50650, Connection=keep-alive, content-length=0, Cookie=_pk_id.1.1fff=7a9b7462bdcf2de3.1639893895., Host=localhost:8080, sec-ch-ua=" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96", sec-ch-ua-mobile=?0, sec-ch-ua-platform="Linux", Sec-Fetch-Dest=document, Sec-Fetch-Mode=navigate, Sec-Fetch-Site=none, Sec-Fetch-User=?1, text=frist, Upgrade-Insecure-Requests=1, User-Agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.93 Safari/537.36}, BodyType: String, Body: ]
+4389 [Camel (camel-1) thread #2 - NettyConsumerExecutorGroup] INFO    - Exchange[ExchangePattern: InOut, BodyType: java.util.ArrayList, Body: []]
+0    [main] INFO  org.apache.camel.impl.engine.DefaultAutowiredLifecycleStrategy  - Autowired property: dataSource on component: sql as exactly one instance of type: javax.sql.DataSource (org.apache.commons.dbcp.BasicDataSource) found in the registry
+190  [main] INFO  org.apache.camel.component.netty.http.HttpServerBootstrapFactory  - BootstrapFactory on port 8080 is using bootstrap configuration: [NettyServerBootstrapConfiguration{protocol='http', host='localhost', port=8080, broadcast=false, sendBufferSize=65536, receiveBufferSize=65536, receiveBufferSizePredictor=0, workerCount=0, bossCount=1, keepAlive=true, tcpNoDelay=true, reuseAddress=true, connectTimeout=10000, backlog=0, serverInitializerFactory=org.apache.camel.component.netty.http.HttpServerInitializerFactory@28e8dde3, nettyServerBootstrapFactory=null, options=null, ssl=false, sslHandler=null, sslContextParameters='null', needClientAuth=false, enabledProtocols='TLSv1,TLSv1.1,TLSv1.2, keyStoreFile=null, trustStoreFile=null, keyStoreResource='null', trustStoreResource='null', keyStoreFormat='JKS', securityProvider='SunX509', passphrase='null', bossGroup=null, workerGroup=null, networkInterface='null', reconnect='true', reconnectInterval='10000'}]
+203  [main] INFO  org.apache.camel.component.netty.NettyComponent  - Creating shared NettyConsumerExecutorGroup with 17 threads
+255  [main] INFO  org.apache.camel.component.netty.SingleTCPNettyServerBootstrapFactory  - ServerBootstrap binding to localhost:8080
+318  [main] INFO  org.apache.camel.component.netty.NettyConsumer  - Netty consumer bound to: localhost:8080
+322  [main] ERROR org.apache.camel.impl.engine.AbstractCamelContext  - Error starting CamelContext (camel-1) due to exception thrown: Failed to start route route4 because of Multiple consumers for the same endpoint is not allowed: http://localhost:8080/v1/test?httpMethodRestrict=GET%2COPTIONS
+org.apache.camel.FailedToStartRouteException: Failed to start route route4 because of Multiple consumers for the same endpoint is not allowed: http://localhost:8080/v1/test?httpMethodRestrict=GET%2COPTIONS
+	at org.apache.camel.impl.engine.InternalRouteStartupManager.doStartOrResumeRouteConsumers(InternalRouteStartupManager.java:357)
+	at org.apache.camel.impl.engine.InternalRouteStartupManager.doStartRouteConsumers(InternalRouteStartupManager.java:319)
+	at org.apache.camel.impl.engine.InternalRouteStartupManager.safelyStartRouteServices(InternalRouteStartupManager.java:213)
+	at org.apache.camel.impl.engine.InternalRouteStartupManager.doStartOrResumeRoutes(InternalRouteStartupManager.java:147)
+	at org.apache.camel.impl.engine.AbstractCamelContext.doStartCamel(AbstractCamelContext.java:3198)
+	at org.apache.camel.impl.engine.AbstractCamelContext.doStartContext(AbstractCamelContext.java:2862)
+	at org.apache.camel.impl.engine.AbstractCamelContext.doStart(AbstractCamelContext.java:2813)
+	at org.apache.camel.support.service.BaseService.start(BaseService.java:119)
+	at org.apache.camel.impl.engine.AbstractCamelContext.start(AbstractCamelContext.java:2509)
+	at org.apache.camel.impl.DefaultCamelContext.start(DefaultCamelContext.java:246)
+	at restToMongo.Main.main(Main.java:23)
+324  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  - Apache Camel 3.12.0 (camel-1) shutting down (timeout:45s)
+328  [Camel (camel-1) thread #1 - ShutdownTask] INFO  org.apache.camel.component.netty.SingleTCPNettyServerBootstrapFactory  - ServerBootstrap unbinding from localhost:8080
+335  [Camel (camel-1) thread #1 - ShutdownTask] INFO  org.apache.camel.component.netty.NettyConsumer  - Netty consumer unbound from: localhost:8080
+339  [main] INFO  org.apache.camel.component.netty.NettyConsumer  - Netty consumer unbound from: localhost:8080
+343  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  - Routes shutdown summary (total:4 stopped:4)
+343  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  -     Stopped route4 (rest://get:/v1/test/)
+343  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  -     Stopped route3 (rest://get:/v1/test)
+343  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  -     Stopped route2 (direct://search)
+343  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  -     Stopped route1 (direct://read)
+356  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  - Apache Camel 3.12.0 (camel-1) shutdown in 32ms (uptime:162ms)
+0    [main] INFO  org.apache.camel.impl.engine.DefaultAutowiredLifecycleStrategy  - Autowired property: dataSource on component: sql as exactly one instance of type: javax.sql.DataSource (org.apache.commons.dbcp.BasicDataSource) found in the registry
+181  [main] INFO  org.apache.camel.component.netty.http.HttpServerBootstrapFactory  - BootstrapFactory on port 8080 is using bootstrap configuration: [NettyServerBootstrapConfiguration{protocol='http', host='localhost', port=8080, broadcast=false, sendBufferSize=65536, receiveBufferSize=65536, receiveBufferSizePredictor=0, workerCount=0, bossCount=1, keepAlive=true, tcpNoDelay=true, reuseAddress=true, connectTimeout=10000, backlog=0, serverInitializerFactory=org.apache.camel.component.netty.http.HttpServerInitializerFactory@6d23017e, nettyServerBootstrapFactory=null, options=null, ssl=false, sslHandler=null, sslContextParameters='null', needClientAuth=false, enabledProtocols='TLSv1,TLSv1.1,TLSv1.2, keyStoreFile=null, trustStoreFile=null, keyStoreResource='null', trustStoreResource='null', keyStoreFormat='JKS', securityProvider='SunX509', passphrase='null', bossGroup=null, workerGroup=null, networkInterface='null', reconnect='true', reconnectInterval='10000'}]
+194  [main] INFO  org.apache.camel.component.netty.NettyComponent  - Creating shared NettyConsumerExecutorGroup with 17 threads
+244  [main] INFO  org.apache.camel.component.netty.SingleTCPNettyServerBootstrapFactory  - ServerBootstrap binding to localhost:8080
+312  [main] INFO  org.apache.camel.component.netty.NettyConsumer  - Netty consumer bound to: localhost:8080
+314  [main] INFO  org.apache.camel.component.netty.NettyConsumer  - Netty consumer bound to: localhost:8080
+316  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  - Routes startup summary (total:4 started:4)
+316  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  -     Started route1 (direct://read)
+316  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  -     Started route2 (direct://search)
+316  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  -     Started route3 (rest://get:/v1/test)
+316  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  -     Started route4 (rest://get:/v1/test/%7Btxt%7D)
+316  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  - Apache Camel 3.12.0 (camel-1) started in 583ms (build:81ms init:372ms start:130ms)
+0    [main] INFO  org.apache.camel.impl.engine.DefaultAutowiredLifecycleStrategy  - Autowired property: dataSource on component: sql as exactly one instance of type: javax.sql.DataSource (org.apache.commons.dbcp.BasicDataSource) found in the registry
+180  [main] INFO  org.apache.camel.component.netty.http.HttpServerBootstrapFactory  - BootstrapFactory on port 8080 is using bootstrap configuration: [NettyServerBootstrapConfiguration{protocol='http', host='localhost', port=8080, broadcast=false, sendBufferSize=65536, receiveBufferSize=65536, receiveBufferSizePredictor=0, workerCount=0, bossCount=1, keepAlive=true, tcpNoDelay=true, reuseAddress=true, connectTimeout=10000, backlog=0, serverInitializerFactory=org.apache.camel.component.netty.http.HttpServerInitializerFactory@6d23017e, nettyServerBootstrapFactory=null, options=null, ssl=false, sslHandler=null, sslContextParameters='null', needClientAuth=false, enabledProtocols='TLSv1,TLSv1.1,TLSv1.2, keyStoreFile=null, trustStoreFile=null, keyStoreResource='null', trustStoreResource='null', keyStoreFormat='JKS', securityProvider='SunX509', passphrase='null', bossGroup=null, workerGroup=null, networkInterface='null', reconnect='true', reconnectInterval='10000'}]
+190  [main] INFO  org.apache.camel.component.netty.NettyComponent  - Creating shared NettyConsumerExecutorGroup with 17 threads
+245  [main] INFO  org.apache.camel.component.netty.SingleTCPNettyServerBootstrapFactory  - ServerBootstrap binding to localhost:8080
+323  [main] INFO  org.apache.camel.component.netty.NettyConsumer  - Netty consumer bound to: localhost:8080
+325  [main] INFO  org.apache.camel.component.netty.NettyConsumer  - Netty consumer bound to: localhost:8080
+327  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  - Routes startup summary (total:4 started:4)
+327  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  -     Started route1 (direct://read)
+327  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  -     Started route2 (direct://search)
+327  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  -     Started route3 (rest://get:/v1/test)
+327  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  -     Started route4 (rest://get:/v1/test/%7Btxt%7D)
+328  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  - Apache Camel 3.12.0 (camel-1) started in 598ms (build:71ms init:383ms start:144ms)
+4107 [Camel (camel-1) thread #2 - NettyConsumerExecutorGroup] INFO    - Exchange[ExchangePattern: InOut, Headers: {Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9, Accept-Encoding=gzip, deflate, br, Accept-Language=en-US,en;q=0.9, Cache-Control=max-age=0, CamelHttpHost=null, CamelHttpMethod=GET, CamelHttpPath=/v1/test/frist, CamelHttpPort=80, CamelHttpQuery=null, CamelHttpRawQuery=null, CamelHttpScheme=null, CamelHttpUri=/v1/test/frist, CamelHttpUrl=http://localhost:8080/v1/test/frist, CamelNettyChannelHandlerContext=ChannelHandlerContext(handler, [id: 0xaf98fe4e, L:/127.0.0.1:8080 - R:/127.0.0.1:50710]), CamelNettyLocalAddress=/127.0.0.1:8080, CamelNettyRemoteAddress=/127.0.0.1:50710, Connection=keep-alive, content-length=0, Cookie=_pk_id.1.1fff=7a9b7462bdcf2de3.1639893895., Host=localhost:8080, sec-ch-ua=" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96", sec-ch-ua-mobile=?0, sec-ch-ua-platform="Linux", Sec-Fetch-Dest=document, Sec-Fetch-Mode=navigate, Sec-Fetch-Site=none, Sec-Fetch-User=?1, txt=frist, Upgrade-Insecure-Requests=1, User-Agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.93 Safari/537.36}, BodyType: String, Body: ]
+4474 [Camel (camel-1) thread #2 - NettyConsumerExecutorGroup] INFO    - Exchange[ExchangePattern: InOut, BodyType: java.util.ArrayList, Body: [{id=1, message=first db input, create_date=2021-12-19 17:05:52.0}, {id=1, message=first db input, create_date=2021-12-19 17:07:01.0}, {id=1, message=first db input, create_date=2021-12-19 17:07:06.0}, {id=1, message=first db input, create_date=2021-12-19 17:08:28.0}, {id=1, message=first db input, create_date=2021-12-19 19:45:07.0}, {id=1, message=first db input, create_date=2021-12-19 19:59:30.0}, {id=1, message=first db input, create_date=2021-12-19 20:01:48.0}, {id=1, message=first db input, create_date=2021-12-19 21:13:21.0}, {id=1, message=first db input, create_date=2021-12-19 21:27:10.0}]]
+6594 [Camel (camel-1) thread #2 - NettyConsumerExecutorGroup] INFO    - Exchange[ExchangePattern: InOut, Headers: {Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9, Accept-Encoding=gzip, deflate, br, Accept-Language=en-US,en;q=0.9, Cache-Control=max-age=0, CamelHttpHost=null, CamelHttpMethod=GET, CamelHttpPath=/v1/test/frist, CamelHttpPort=80, CamelHttpQuery=null, CamelHttpRawQuery=null, CamelHttpScheme=null, CamelHttpUri=/v1/test/frist, CamelHttpUrl=http://localhost:8080/v1/test/frist, CamelNettyChannelHandlerContext=ChannelHandlerContext(handler, [id: 0xaf98fe4e, L:/127.0.0.1:8080 - R:/127.0.0.1:50710]), CamelNettyLocalAddress=/127.0.0.1:8080, CamelNettyRemoteAddress=/127.0.0.1:50710, Connection=keep-alive, content-length=0, Cookie=_pk_id.1.1fff=7a9b7462bdcf2de3.1639893895., Host=localhost:8080, sec-ch-ua=" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96", sec-ch-ua-mobile=?0, sec-ch-ua-platform="Linux", Sec-Fetch-Dest=document, Sec-Fetch-Mode=navigate, Sec-Fetch-Site=none, Sec-Fetch-User=?1, txt=frist, Upgrade-Insecure-Requests=1, User-Agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.93 Safari/537.36}, BodyType: String, Body: ]
+6604 [Camel (camel-1) thread #2 - NettyConsumerExecutorGroup] INFO    - Exchange[ExchangePattern: InOut, BodyType: java.util.ArrayList, Body: [{id=1, message=first db input, create_date=2021-12-19 17:05:52.0}, {id=1, message=first db input, create_date=2021-12-19 17:07:01.0}, {id=1, message=first db input, create_date=2021-12-19 17:07:06.0}, {id=1, message=first db input, create_date=2021-12-19 17:08:28.0}, {id=1, message=first db input, create_date=2021-12-19 19:45:07.0}, {id=1, message=first db input, create_date=2021-12-19 19:59:30.0}, {id=1, message=first db input, create_date=2021-12-19 20:01:48.0}, {id=1, message=first db input, create_date=2021-12-19 21:13:21.0}, {id=1, message=first db input, create_date=2021-12-19 21:27:10.0}]]
+0    [main] INFO  org.apache.camel.impl.engine.DefaultAutowiredLifecycleStrategy  - Autowired property: dataSource on component: sql as exactly one instance of type: javax.sql.DataSource (org.apache.commons.dbcp.BasicDataSource) found in the registry
+292  [main] INFO  org.apache.camel.component.netty.http.HttpServerBootstrapFactory  - BootstrapFactory on port 8080 is using bootstrap configuration: [NettyServerBootstrapConfiguration{protocol='http', host='localhost', port=8080, broadcast=false, sendBufferSize=65536, receiveBufferSize=65536, receiveBufferSizePredictor=0, workerCount=0, bossCount=1, keepAlive=true, tcpNoDelay=true, reuseAddress=true, connectTimeout=10000, backlog=0, serverInitializerFactory=org.apache.camel.component.netty.http.HttpServerInitializerFactory@6d23017e, nettyServerBootstrapFactory=null, options=null, ssl=false, sslHandler=null, sslContextParameters='null', needClientAuth=false, enabledProtocols='TLSv1,TLSv1.1,TLSv1.2, keyStoreFile=null, trustStoreFile=null, keyStoreResource='null', trustStoreResource='null', keyStoreFormat='JKS', securityProvider='SunX509', passphrase='null', bossGroup=null, workerGroup=null, networkInterface='null', reconnect='true', reconnectInterval='10000'}]
+306  [main] INFO  org.apache.camel.component.netty.NettyComponent  - Creating shared NettyConsumerExecutorGroup with 17 threads
+354  [main] INFO  org.apache.camel.component.netty.SingleTCPNettyServerBootstrapFactory  - ServerBootstrap binding to localhost:8080
+433  [main] INFO  org.apache.camel.component.netty.NettyConsumer  - Netty consumer bound to: localhost:8080
+435  [main] INFO  org.apache.camel.component.netty.NettyConsumer  - Netty consumer bound to: localhost:8080
+437  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  - Routes startup summary (total:4 started:4)
+437  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  -     Started route1 (direct://read)
+437  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  -     Started route2 (direct://search)
+437  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  -     Started route3 (rest://get:/v1/test)
+437  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  -     Started route4 (rest://get:/v1/test/%7Btxt%7D)
+437  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  - Apache Camel 3.12.0 (camel-1) started in 804ms (build:107ms init:557ms start:140ms)
+3926 [Camel (camel-1) thread #2 - NettyConsumerExecutorGroup] INFO    - Exchange[ExchangePattern: InOut, Headers: {Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9, Accept-Encoding=gzip, deflate, br, Accept-Language=en-US,en;q=0.9, Cache-Control=max-age=0, CamelHttpHost=null, CamelHttpMethod=GET, CamelHttpPath=/v1/test/frist, CamelHttpPort=80, CamelHttpQuery=null, CamelHttpRawQuery=null, CamelHttpScheme=null, CamelHttpUri=/v1/test/frist, CamelHttpUrl=http://localhost:8080/v1/test/frist, CamelNettyChannelHandlerContext=ChannelHandlerContext(handler, [id: 0xfcd58de9, L:/127.0.0.1:8080 - R:/127.0.0.1:50732]), CamelNettyLocalAddress=/127.0.0.1:8080, CamelNettyRemoteAddress=/127.0.0.1:50732, Connection=keep-alive, content-length=0, Cookie=_pk_id.1.1fff=7a9b7462bdcf2de3.1639893895., Host=localhost:8080, sec-ch-ua=" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96", sec-ch-ua-mobile=?0, sec-ch-ua-platform="Linux", Sec-Fetch-Dest=document, Sec-Fetch-Mode=navigate, Sec-Fetch-Site=none, Sec-Fetch-User=?1, txt=frist, Upgrade-Insecure-Requests=1, User-Agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.93 Safari/537.36}, BodyType: String, Body: ]
+4314 [Camel (camel-1) thread #2 - NettyConsumerExecutorGroup] INFO    - Exchange[ExchangePattern: InOut, BodyType: java.util.ArrayList, Body: []]
+9814 [Camel (camel-1) thread #2 - NettyConsumerExecutorGroup] INFO    - Exchange[ExchangePattern: InOut, Headers: {Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9, Accept-Encoding=gzip, deflate, br, Accept-Language=en-US,en;q=0.9, CamelHttpHost=null, CamelHttpMethod=GET, CamelHttpPath=/v1/test/f, CamelHttpPort=80, CamelHttpQuery=null, CamelHttpRawQuery=null, CamelHttpScheme=null, CamelHttpUri=/v1/test/f, CamelHttpUrl=http://localhost:8080/v1/test/f, CamelNettyChannelHandlerContext=ChannelHandlerContext(handler, [id: 0xfcd58de9, L:/127.0.0.1:8080 - R:/127.0.0.1:50732]), CamelNettyLocalAddress=/127.0.0.1:8080, CamelNettyRemoteAddress=/127.0.0.1:50732, Connection=keep-alive, content-length=0, Cookie=_pk_id.1.1fff=7a9b7462bdcf2de3.1639893895., Host=localhost:8080, sec-ch-ua=" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96", sec-ch-ua-mobile=?0, sec-ch-ua-platform="Linux", Sec-Fetch-Dest=document, Sec-Fetch-Mode=navigate, Sec-Fetch-Site=none, Sec-Fetch-User=?1, txt=f, Upgrade-Insecure-Requests=1, User-Agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.93 Safari/537.36}, BodyType: String, Body: ]
+9817 [Camel (camel-1) thread #2 - NettyConsumerExecutorGroup] INFO    - Exchange[ExchangePattern: InOut, BodyType: java.util.ArrayList, Body: []]
+0    [main] INFO  org.apache.camel.impl.engine.DefaultAutowiredLifecycleStrategy  - Autowired property: dataSource on component: sql as exactly one instance of type: javax.sql.DataSource (org.apache.commons.dbcp.BasicDataSource) found in the registry
+171  [main] INFO  org.apache.camel.component.netty.http.HttpServerBootstrapFactory  - BootstrapFactory on port 8080 is using bootstrap configuration: [NettyServerBootstrapConfiguration{protocol='http', host='localhost', port=8080, broadcast=false, sendBufferSize=65536, receiveBufferSize=65536, receiveBufferSizePredictor=0, workerCount=0, bossCount=1, keepAlive=true, tcpNoDelay=true, reuseAddress=true, connectTimeout=10000, backlog=0, serverInitializerFactory=org.apache.camel.component.netty.http.HttpServerInitializerFactory@6d23017e, nettyServerBootstrapFactory=null, options=null, ssl=false, sslHandler=null, sslContextParameters='null', needClientAuth=false, enabledProtocols='TLSv1,TLSv1.1,TLSv1.2, keyStoreFile=null, trustStoreFile=null, keyStoreResource='null', trustStoreResource='null', keyStoreFormat='JKS', securityProvider='SunX509', passphrase='null', bossGroup=null, workerGroup=null, networkInterface='null', reconnect='true', reconnectInterval='10000'}]
+185  [main] INFO  org.apache.camel.component.netty.NettyComponent  - Creating shared NettyConsumerExecutorGroup with 17 threads
+238  [main] INFO  org.apache.camel.component.netty.SingleTCPNettyServerBootstrapFactory  - ServerBootstrap binding to localhost:8080
+316  [main] INFO  org.apache.camel.component.netty.NettyConsumer  - Netty consumer bound to: localhost:8080
+318  [main] INFO  org.apache.camel.component.netty.NettyConsumer  - Netty consumer bound to: localhost:8080
+321  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  - Routes startup summary (total:4 started:4)
+321  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  -     Started route1 (direct://read)
+321  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  -     Started route2 (direct://search)
+321  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  -     Started route3 (rest://get:/v1/test)
+321  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  -     Started route4 (rest://get:/v1/test/%7Btxt%7D)
+321  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  - Apache Camel 3.12.0 (camel-1) started in 591ms (build:72ms init:374ms start:145ms)
+6213 [Camel (camel-1) thread #2 - NettyConsumerExecutorGroup] INFO    - Exchange[ExchangePattern: InOut, Headers: {Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9, Accept-Encoding=gzip, deflate, br, Accept-Language=en-US,en;q=0.9, Cache-Control=max-age=0, CamelHttpHost=null, CamelHttpMethod=GET, CamelHttpPath=/v1/test/f, CamelHttpPort=80, CamelHttpQuery=null, CamelHttpRawQuery=null, CamelHttpScheme=null, CamelHttpUri=/v1/test/f, CamelHttpUrl=http://localhost:8080/v1/test/f, CamelNettyChannelHandlerContext=ChannelHandlerContext(handler, [id: 0x8057e1c5, L:/127.0.0.1:8080 - R:/127.0.0.1:51030]), CamelNettyLocalAddress=/127.0.0.1:8080, CamelNettyRemoteAddress=/127.0.0.1:51030, Connection=keep-alive, content-length=0, Cookie=_pk_id.1.1fff=7a9b7462bdcf2de3.1639893895., Host=localhost:8080, sec-ch-ua=" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96", sec-ch-ua-mobile=?0, sec-ch-ua-platform="Linux", Sec-Fetch-Dest=document, Sec-Fetch-Mode=navigate, Sec-Fetch-Site=none, Sec-Fetch-User=?1, txt=f, Upgrade-Insecure-Requests=1, User-Agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.93 Safari/537.36}, BodyType: String, Body: ]
+6570 [Camel (camel-1) thread #2 - NettyConsumerExecutorGroup] INFO    - Exchange[ExchangePattern: InOut, BodyType: java.util.ArrayList, Body: []]
+0    [main] INFO  org.apache.camel.impl.engine.DefaultAutowiredLifecycleStrategy  - Autowired property: dataSource on component: sql as exactly one instance of type: javax.sql.DataSource (org.apache.commons.dbcp.BasicDataSource) found in the registry
+190  [main] INFO  org.apache.camel.component.netty.http.HttpServerBootstrapFactory  - BootstrapFactory on port 8080 is using bootstrap configuration: [NettyServerBootstrapConfiguration{protocol='http', host='localhost', port=8080, broadcast=false, sendBufferSize=65536, receiveBufferSize=65536, receiveBufferSizePredictor=0, workerCount=0, bossCount=1, keepAlive=true, tcpNoDelay=true, reuseAddress=true, connectTimeout=10000, backlog=0, serverInitializerFactory=org.apache.camel.component.netty.http.HttpServerInitializerFactory@28e8dde3, nettyServerBootstrapFactory=null, options=null, ssl=false, sslHandler=null, sslContextParameters='null', needClientAuth=false, enabledProtocols='TLSv1,TLSv1.1,TLSv1.2, keyStoreFile=null, trustStoreFile=null, keyStoreResource='null', trustStoreResource='null', keyStoreFormat='JKS', securityProvider='SunX509', passphrase='null', bossGroup=null, workerGroup=null, networkInterface='null', reconnect='true', reconnectInterval='10000'}]
+203  [main] INFO  org.apache.camel.component.netty.NettyComponent  - Creating shared NettyConsumerExecutorGroup with 17 threads
+241  [main] INFO  org.apache.camel.component.netty.SingleTCPNettyServerBootstrapFactory  - ServerBootstrap binding to localhost:8080
+297  [main] INFO  org.apache.camel.component.netty.NettyConsumer  - Netty consumer bound to: localhost:8080
+299  [main] INFO  org.apache.camel.component.netty.NettyConsumer  - Netty consumer bound to: localhost:8080
+301  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  - Routes startup summary (total:4 started:4)
+301  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  -     Started route1 (direct://read)
+301  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  -     Started route2 (direct://search)
+301  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  -     Started route3 (rest://get:/v1/test)
+301  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  -     Started route4 (rest://get:/v2/test)
+301  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  - Apache Camel 3.12.0 (camel-1) started in 590ms (build:74ms init:409ms start:107ms)
+22770 [Camel (camel-1) thread #2 - NettyConsumerExecutorGroup] INFO    - Exchange[ExchangePattern: InOut, BodyType: java.util.ArrayList, Body: [{id=1, message=first db input, create_date=2021-12-19 17:05:52.0}, {id=1, message=first db input, create_date=2021-12-19 17:07:01.0}, {id=1, message=first db input, create_date=2021-12-19 17:07:06.0}, {id=1, message=first db input, create_date=2021-12-19 17:08:28.0}, {id=1, message=first db input, create_date=2021-12-19 19:45:07.0}, {id=1, message=first db input, create_date=2021-12-19 19:59:30.0}, {id=1, message=first db input, create_date=2021-12-19 20:01:48.0}, {id=1, message=first db input, create_date=2021-12-19 21:13:21.0}, {id=1, message=first db input, create_date=2021-12-19 21:27:10.0}]]
+30909 [Camel (camel-1) thread #2 - NettyConsumerExecutorGroup] INFO    - Exchange[ExchangePattern: InOut, BodyType: java.util.ArrayList, Body: [{id=1, message=first db input, create_date=2021-12-19 17:05:52.0}, {id=1, message=first db input, create_date=2021-12-19 17:07:01.0}, {id=1, message=first db input, create_date=2021-12-19 17:07:06.0}, {id=1, message=first db input, create_date=2021-12-19 17:08:28.0}, {id=1, message=first db input, create_date=2021-12-19 19:45:07.0}, {id=1, message=first db input, create_date=2021-12-19 19:59:30.0}, {id=1, message=first db input, create_date=2021-12-19 20:01:48.0}, {id=1, message=first db input, create_date=2021-12-19 21:13:21.0}, {id=1, message=first db input, create_date=2021-12-19 21:27:10.0}]]
+40396 [Camel (camel-1) thread #2 - NettyConsumerExecutorGroup] INFO    - Exchange[ExchangePattern: InOut, Headers: {Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9, Accept-Encoding=gzip, deflate, br, Accept-Language=en-US,en;q=0.9, CamelHttpHost=null, CamelHttpMethod=GET, CamelHttpPath=/, CamelHttpPort=80, CamelHttpQuery=txt=hello, CamelHttpRawQuery=txt=hello, CamelHttpScheme=null, CamelHttpUri=/v2/test/, CamelHttpUrl=http://localhost:8080/v2/test/, CamelNettyChannelHandlerContext=ChannelHandlerContext(handler, [id: 0xc315f3fb, L:/127.0.0.1:8080 - R:/127.0.0.1:51070]), CamelNettyLocalAddress=/127.0.0.1:8080, CamelNettyRemoteAddress=/127.0.0.1:51070, Connection=keep-alive, content-length=0, Cookie=_pk_id.1.1fff=7a9b7462bdcf2de3.1639893895., Host=localhost:8080, sec-ch-ua=" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96", sec-ch-ua-mobile=?0, sec-ch-ua-platform="Linux", Sec-Fetch-Dest=document, Sec-Fetch-Mode=navigate, Sec-Fetch-Site=none, Sec-Fetch-User=?1, txt=hello, Upgrade-Insecure-Requests=1, User-Agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.93 Safari/537.36}, BodyType: String, Body: ]
+40398 [Camel (camel-1) thread #2 - NettyConsumerExecutorGroup] INFO    - Exchange[ExchangePattern: InOut, BodyType: java.util.ArrayList, Body: []]
+0    [main] INFO  org.apache.camel.impl.engine.DefaultAutowiredLifecycleStrategy  - Autowired property: dataSource on component: sql as exactly one instance of type: javax.sql.DataSource (org.apache.commons.dbcp.BasicDataSource) found in the registry
+0    [main] INFO  org.apache.camel.impl.engine.DefaultAutowiredLifecycleStrategy  - Autowired property: dataSource on component: sql as exactly one instance of type: javax.sql.DataSource (org.apache.commons.dbcp.BasicDataSource) found in the registry
+195  [main] INFO  org.apache.camel.component.netty.http.HttpServerBootstrapFactory  - BootstrapFactory on port 8080 is using bootstrap configuration: [NettyServerBootstrapConfiguration{protocol='http', host='localhost', port=8080, broadcast=false, sendBufferSize=65536, receiveBufferSize=65536, receiveBufferSizePredictor=0, workerCount=0, bossCount=1, keepAlive=true, tcpNoDelay=true, reuseAddress=true, connectTimeout=10000, backlog=0, serverInitializerFactory=org.apache.camel.component.netty.http.HttpServerInitializerFactory@2807bdeb, nettyServerBootstrapFactory=null, options=null, ssl=false, sslHandler=null, sslContextParameters='null', needClientAuth=false, enabledProtocols='TLSv1,TLSv1.1,TLSv1.2, keyStoreFile=null, trustStoreFile=null, keyStoreResource='null', trustStoreResource='null', keyStoreFormat='JKS', securityProvider='SunX509', passphrase='null', bossGroup=null, workerGroup=null, networkInterface='null', reconnect='true', reconnectInterval='10000'}]
+210  [main] INFO  org.apache.camel.component.netty.NettyComponent  - Creating shared NettyConsumerExecutorGroup with 17 threads
+263  [main] INFO  org.apache.camel.component.netty.SingleTCPNettyServerBootstrapFactory  - ServerBootstrap binding to localhost:8080
+330  [main] INFO  org.apache.camel.component.netty.NettyConsumer  - Netty consumer bound to: localhost:8080
+331  [main] INFO  org.apache.camel.component.netty.NettyConsumer  - Netty consumer bound to: localhost:8080
+333  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  - Routes startup summary (total:4 started:4)
+333  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  -     Started route1 (direct://read)
+333  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  -     Started route2 (direct://search)
+333  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  -     Started route3 (rest://get:/v1/test)
+333  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  -     Started route4 (rest://get:/v2/test)
+333  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  - Apache Camel 3.12.0 (camel-1) started in 601ms (build:80ms init:388ms start:133ms)
+26152 [Camel (camel-1) thread #2 - NettyConsumerExecutorGroup] INFO    - Exchange[ExchangePattern: InOut, Headers: {Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9, Accept-Encoding=gzip, deflate, br, Accept-Language=en-US,en;q=0.9, Cache-Control=max-age=0, CamelHttpHost=null, CamelHttpMethod=GET, CamelHttpPath=/, CamelHttpPort=80, CamelHttpQuery=txt=hello, CamelHttpRawQuery=txt=hello, CamelHttpScheme=null, CamelHttpUri=/v2/test/, CamelHttpUrl=http://localhost:8080/v2/test/, CamelNettyChannelHandlerContext=ChannelHandlerContext(handler, [id: 0xb4ecd4a4, L:/127.0.0.1:8080 - R:/127.0.0.1:51288]), CamelNettyLocalAddress=/127.0.0.1:8080, CamelNettyRemoteAddress=/127.0.0.1:51288, Connection=keep-alive, content-length=0, Cookie=_pk_id.1.1fff=7a9b7462bdcf2de3.1639893895., Host=localhost:8080, sec-ch-ua=" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96", sec-ch-ua-mobile=?0, sec-ch-ua-platform="Linux", Sec-Fetch-Dest=document, Sec-Fetch-Mode=navigate, Sec-Fetch-Site=none, Sec-Fetch-User=?1, txt=hello, Upgrade-Insecure-Requests=1, User-Agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.93 Safari/537.36}, BodyType: String, Body: ]
+26499 [Camel (camel-1) thread #2 - NettyConsumerExecutorGroup] INFO    - Exchange[ExchangePattern: InOut, BodyType: java.util.ArrayList, Body: []]
+0    [main] INFO  org.apache.camel.impl.engine.DefaultAutowiredLifecycleStrategy  - Autowired property: dataSource on component: sql as exactly one instance of type: javax.sql.DataSource (org.apache.commons.dbcp.BasicDataSource) found in the registry
+189  [main] INFO  org.apache.camel.component.netty.http.HttpServerBootstrapFactory  - BootstrapFactory on port 8080 is using bootstrap configuration: [NettyServerBootstrapConfiguration{protocol='http', host='localhost', port=8080, broadcast=false, sendBufferSize=65536, receiveBufferSize=65536, receiveBufferSizePredictor=0, workerCount=0, bossCount=1, keepAlive=true, tcpNoDelay=true, reuseAddress=true, connectTimeout=10000, backlog=0, serverInitializerFactory=org.apache.camel.component.netty.http.HttpServerInitializerFactory@2807bdeb, nettyServerBootstrapFactory=null, options=null, ssl=false, sslHandler=null, sslContextParameters='null', needClientAuth=false, enabledProtocols='TLSv1,TLSv1.1,TLSv1.2, keyStoreFile=null, trustStoreFile=null, keyStoreResource='null', trustStoreResource='null', keyStoreFormat='JKS', securityProvider='SunX509', passphrase='null', bossGroup=null, workerGroup=null, networkInterface='null', reconnect='true', reconnectInterval='10000'}]
+201  [main] INFO  org.apache.camel.component.netty.NettyComponent  - Creating shared NettyConsumerExecutorGroup with 17 threads
+253  [main] INFO  org.apache.camel.component.netty.SingleTCPNettyServerBootstrapFactory  - ServerBootstrap binding to localhost:8080
+324  [main] INFO  org.apache.camel.component.netty.NettyConsumer  - Netty consumer bound to: localhost:8080
+326  [main] INFO  org.apache.camel.component.netty.NettyConsumer  - Netty consumer bound to: localhost:8080
+328  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  - Routes startup summary (total:4 started:4)
+328  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  -     Started route1 (direct://read)
+328  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  -     Started route2 (direct://search)
+328  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  -     Started route3 (rest://get:/v1/test)
+328  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  -     Started route4 (rest://get:/v2/test)
+328  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  - Apache Camel 3.12.0 (camel-1) started in 597ms (build:85ms init:377ms start:135ms)
+8028 [Camel (camel-1) thread #2 - NettyConsumerExecutorGroup] INFO    - Exchange[ExchangePattern: InOut, Headers: {Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9, Accept-Encoding=gzip, deflate, br, Accept-Language=en-US,en;q=0.9, Cache-Control=max-age=0, CamelHttpHost=null, CamelHttpMethod=GET, CamelHttpPath=/, CamelHttpPort=80, CamelHttpQuery=txt=hello, CamelHttpRawQuery=txt=hello, CamelHttpScheme=null, CamelHttpUri=/v2/test/, CamelHttpUrl=http://localhost:8080/v2/test/, CamelNettyChannelHandlerContext=ChannelHandlerContext(handler, [id: 0x0fdc8691, L:/127.0.0.1:8080 - R:/127.0.0.1:51304]), CamelNettyLocalAddress=/127.0.0.1:8080, CamelNettyRemoteAddress=/127.0.0.1:51304, Connection=keep-alive, content-length=0, Cookie=_pk_id.1.1fff=7a9b7462bdcf2de3.1639893895., Host=localhost:8080, sec-ch-ua=" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96", sec-ch-ua-mobile=?0, sec-ch-ua-platform="Linux", Sec-Fetch-Dest=document, Sec-Fetch-Mode=navigate, Sec-Fetch-Site=none, Sec-Fetch-User=?1, txt=hello, Upgrade-Insecure-Requests=1, User-Agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.93 Safari/537.36}, BodyType: String, Body: ]
+8362 [Camel (camel-1) thread #2 - NettyConsumerExecutorGroup] INFO    - Exchange[ExchangePattern: InOut, BodyType: java.util.ArrayList, Body: []]
+33402 [Camel (camel-1) thread #2 - NettyConsumerExecutorGroup] INFO    - Exchange[ExchangePattern: InOut, Headers: {Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9, Accept-Encoding=gzip, deflate, br, Accept-Language=en-US,en;q=0.9, CamelHttpHost=null, CamelHttpMethod=GET, CamelHttpPath=/, CamelHttpPort=80, CamelHttpQuery=txt=first, CamelHttpRawQuery=txt=first, CamelHttpScheme=null, CamelHttpUri=/v2/test/, CamelHttpUrl=http://localhost:8080/v2/test/, CamelNettyChannelHandlerContext=ChannelHandlerContext(handler, [id: 0x0fdc8691, L:/127.0.0.1:8080 - R:/127.0.0.1:51304]), CamelNettyLocalAddress=/127.0.0.1:8080, CamelNettyRemoteAddress=/127.0.0.1:51304, Connection=keep-alive, content-length=0, Cookie=_pk_id.1.1fff=7a9b7462bdcf2de3.1639893895., Host=localhost:8080, sec-ch-ua=" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96", sec-ch-ua-mobile=?0, sec-ch-ua-platform="Linux", Sec-Fetch-Dest=document, Sec-Fetch-Mode=navigate, Sec-Fetch-Site=none, Sec-Fetch-User=?1, txt=first, Upgrade-Insecure-Requests=1, User-Agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.93 Safari/537.36}, BodyType: String, Body: ]
+33410 [Camel (camel-1) thread #2 - NettyConsumerExecutorGroup] INFO    - Exchange[ExchangePattern: InOut, BodyType: java.util.ArrayList, Body: [{id=1, message=first db input, create_date=2021-12-19 17:05:52.0}, {id=1, message=first db input, create_date=2021-12-19 17:07:01.0}, {id=1, message=first db input, create_date=2021-12-19 17:07:06.0}, {id=1, message=first db input, create_date=2021-12-19 17:08:28.0}, {id=1, message=first db input, create_date=2021-12-19 19:45:07.0}, {id=1, message=first db input, create_date=2021-12-19 19:59:30.0}, {id=1, message=first db input, create_date=2021-12-19 20:01:48.0}, {id=1, message=first db input, create_date=2021-12-19 21:13:21.0}, {id=1, message=first db input, create_date=2021-12-19 21:27:10.0}]]
+41247 [Camel (camel-1) thread #2 - NettyConsumerExecutorGroup] INFO    - Exchange[ExchangePattern: InOut, Headers: {Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9, Accept-Encoding=gzip, deflate, br, Accept-Language=en-US,en;q=0.9, CamelHttpHost=null, CamelHttpMethod=GET, CamelHttpPath=/, CamelHttpPort=80, CamelHttpQuery=txt=lsat, CamelHttpRawQuery=txt=lsat, CamelHttpScheme=null, CamelHttpUri=/v2/test/, CamelHttpUrl=http://localhost:8080/v2/test/, CamelNettyChannelHandlerContext=ChannelHandlerContext(handler, [id: 0x0fdc8691, L:/127.0.0.1:8080 - R:/127.0.0.1:51304]), CamelNettyLocalAddress=/127.0.0.1:8080, CamelNettyRemoteAddress=/127.0.0.1:51304, Connection=keep-alive, content-length=0, Cookie=_pk_id.1.1fff=7a9b7462bdcf2de3.1639893895., Host=localhost:8080, sec-ch-ua=" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96", sec-ch-ua-mobile=?0, sec-ch-ua-platform="Linux", Sec-Fetch-Dest=document, Sec-Fetch-Mode=navigate, Sec-Fetch-Site=none, Sec-Fetch-User=?1, txt=lsat, Upgrade-Insecure-Requests=1, User-Agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.93 Safari/537.36}, BodyType: String, Body: ]
+41250 [Camel (camel-1) thread #2 - NettyConsumerExecutorGroup] INFO    - Exchange[ExchangePattern: InOut, BodyType: java.util.ArrayList, Body: []]
+46033 [Camel (camel-1) thread #2 - NettyConsumerExecutorGroup] INFO    - Exchange[ExchangePattern: InOut, Headers: {Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9, Accept-Encoding=gzip, deflate, br, Accept-Language=en-US,en;q=0.9, CamelHttpHost=null, CamelHttpMethod=GET, CamelHttpPath=/, CamelHttpPort=80, CamelHttpQuery=txt=last, CamelHttpRawQuery=txt=last, CamelHttpScheme=null, CamelHttpUri=/v2/test/, CamelHttpUrl=http://localhost:8080/v2/test/, CamelNettyChannelHandlerContext=ChannelHandlerContext(handler, [id: 0x0fdc8691, L:/127.0.0.1:8080 - R:/127.0.0.1:51304]), CamelNettyLocalAddress=/127.0.0.1:8080, CamelNettyRemoteAddress=/127.0.0.1:51304, Connection=keep-alive, content-length=0, Cookie=_pk_id.1.1fff=7a9b7462bdcf2de3.1639893895., Host=localhost:8080, sec-ch-ua=" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96", sec-ch-ua-mobile=?0, sec-ch-ua-platform="Linux", Sec-Fetch-Dest=document, Sec-Fetch-Mode=navigate, Sec-Fetch-Site=none, Sec-Fetch-User=?1, txt=last, Upgrade-Insecure-Requests=1, User-Agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.93 Safari/537.36}, BodyType: String, Body: ]
+46038 [Camel (camel-1) thread #2 - NettyConsumerExecutorGroup] INFO    - Exchange[ExchangePattern: InOut, BodyType: java.util.ArrayList, Body: []]
+0    [main] INFO  org.apache.camel.impl.engine.DefaultAutowiredLifecycleStrategy  - Autowired property: dataSource on component: sql as exactly one instance of type: javax.sql.DataSource (org.apache.commons.dbcp.BasicDataSource) found in the registry
+225  [main] INFO  org.apache.camel.component.netty.http.HttpServerBootstrapFactory  - BootstrapFactory on port 8080 is using bootstrap configuration: [NettyServerBootstrapConfiguration{protocol='http', host='localhost', port=8080, broadcast=false, sendBufferSize=65536, receiveBufferSize=65536, receiveBufferSizePredictor=0, workerCount=0, bossCount=1, keepAlive=true, tcpNoDelay=true, reuseAddress=true, connectTimeout=10000, backlog=0, serverInitializerFactory=org.apache.camel.component.netty.http.HttpServerInitializerFactory@2807bdeb, nettyServerBootstrapFactory=null, options=null, ssl=false, sslHandler=null, sslContextParameters='null', needClientAuth=false, enabledProtocols='TLSv1,TLSv1.1,TLSv1.2, keyStoreFile=null, trustStoreFile=null, keyStoreResource='null', trustStoreResource='null', keyStoreFormat='JKS', securityProvider='SunX509', passphrase='null', bossGroup=null, workerGroup=null, networkInterface='null', reconnect='true', reconnectInterval='10000'}]
+238  [main] INFO  org.apache.camel.component.netty.NettyComponent  - Creating shared NettyConsumerExecutorGroup with 17 threads
+295  [main] INFO  org.apache.camel.component.netty.SingleTCPNettyServerBootstrapFactory  - ServerBootstrap binding to localhost:8080
+366  [main] INFO  org.apache.camel.component.netty.NettyConsumer  - Netty consumer bound to: localhost:8080
+369  [main] INFO  org.apache.camel.component.netty.NettyConsumer  - Netty consumer bound to: localhost:8080
+372  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  - Routes startup summary (total:4 started:4)
+372  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  -     Started route1 (direct://read)
+372  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  -     Started route2 (direct://search)
+372  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  -     Started route3 (rest://get:/v1/test)
+372  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  -     Started route4 (rest://get:/v2/test)
+372  [main] INFO  org.apache.camel.impl.engine.AbstractCamelContext  - Apache Camel 3.12.0 (camel-1) started in 689ms (build:93ms init:453ms start:143ms)
+5499 [Camel (camel-1) thread #2 - NettyConsumerExecutorGroup] INFO    - Exchange[ExchangePattern: InOut, Headers: {Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9, Accept-Encoding=gzip, deflate, br, Accept-Language=en-US,en;q=0.9, CamelHttpHost=null, CamelHttpMethod=GET, CamelHttpPath=/, CamelHttpPort=80, CamelHttpQuery=txt=f, CamelHttpRawQuery=txt=f, CamelHttpScheme=null, CamelHttpUri=/v2/test/, CamelHttpUrl=http://localhost:8080/v2/test/, CamelNettyChannelHandlerContext=ChannelHandlerContext(handler, [id: 0x6d6f3e7e, L:/127.0.0.1:8080 - R:/127.0.0.1:51332]), CamelNettyLocalAddress=/127.0.0.1:8080, CamelNettyRemoteAddress=/127.0.0.1:51332, Connection=keep-alive, content-length=0, Cookie=_pk_id.1.1fff=7a9b7462bdcf2de3.1639893895., Host=localhost:8080, sec-ch-ua=" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96", sec-ch-ua-mobile=?0, sec-ch-ua-platform="Linux", Sec-Fetch-Dest=document, Sec-Fetch-Mode=navigate, Sec-Fetch-Site=none, Sec-Fetch-User=?1, txt=f, Upgrade-Insecure-Requests=1, User-Agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.93 Safari/537.36}, BodyType: String, Body: ]
+5813 [Camel (camel-1) thread #2 - NettyConsumerExecutorGroup] INFO    - Exchange[ExchangePattern: InOut, BodyType: java.util.ArrayList, Body: [{id=1, message=first db input, create_date=2021-12-19 17:05:52.0}, {id=1, message=first db input, create_date=2021-12-19 17:07:01.0}, {id=1, message=first db input, create_date=2021-12-19 17:07:06.0}, {id=1, message=first db input, create_date=2021-12-19 17:08:28.0}, {id=1, message=first db input, create_date=2021-12-19 19:45:07.0}, {id=1, message=first db input, create_date=2021-12-19 19:59:30.0}, {id=1, message=first db input, create_date=2021-12-19 20:01:48.0}, {id=1, message=first db input, create_date=2021-12-19 21:13:21.0}, {id=1, message=first db input, create_date=2021-12-19 21:27:10.0}]]
+14392 [Camel (camel-1) thread #2 - NettyConsumerExecutorGroup] INFO    - Exchange[ExchangePattern: InOut, Headers: {Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9, Accept-Encoding=gzip, deflate, br, Accept-Language=en-US,en;q=0.9, CamelHttpHost=null, CamelHttpMethod=GET, CamelHttpPath=/, CamelHttpPort=80, CamelHttpQuery=null, CamelHttpRawQuery=null, CamelHttpScheme=null, CamelHttpUri=/v2/test/, CamelHttpUrl=http://localhost:8080/v2/test/, CamelNettyChannelHandlerContext=ChannelHandlerContext(handler, [id: 0x6d6f3e7e, L:/127.0.0.1:8080 - R:/127.0.0.1:51332]), CamelNettyLocalAddress=/127.0.0.1:8080, CamelNettyRemoteAddress=/127.0.0.1:51332, Connection=keep-alive, content-length=0, Cookie=_pk_id.1.1fff=7a9b7462bdcf2de3.1639893895., Host=localhost:8080, sec-ch-ua=" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96", sec-ch-ua-mobile=?0, sec-ch-ua-platform="Linux", Sec-Fetch-Dest=document, Sec-Fetch-Mode=navigate, Sec-Fetch-Site=none, Sec-Fetch-User=?1, Upgrade-Insecure-Requests=1, User-Agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.93 Safari/537.36}, BodyType: String, Body: ]
+14397 [Camel (camel-1) thread #2 - NettyConsumerExecutorGroup] INFO    - Exchange[ExchangePattern: InOut, BodyType: java.util.ArrayList, Body: []]
+24205 [Camel (camel-1) thread #2 - NettyConsumerExecutorGroup] INFO    - Exchange[ExchangePattern: InOut, BodyType: java.util.ArrayList, Body: [{id=1, message=first db input, create_date=2021-12-19 17:05:52.0}, {id=1, message=first db input, create_date=2021-12-19 17:07:01.0}, {id=1, message=first db input, create_date=2021-12-19 17:07:06.0}, {id=1, message=first db input, create_date=2021-12-19 17:08:28.0}, {id=1, message=first db input, create_date=2021-12-19 19:45:07.0}, {id=1, message=first db input, create_date=2021-12-19 19:59:30.0}, {id=1, message=first db input, create_date=2021-12-19 20:01:48.0}, {id=1, message=first db input, create_date=2021-12-19 21:13:21.0}, {id=1, message=first db input, create_date=2021-12-19 21:27:10.0}]]
